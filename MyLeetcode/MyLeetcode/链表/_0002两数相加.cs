@@ -4,44 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode
+namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/add-two-numbers/
 
-    class Program
+    class _0002两数相加
     {
-        static void Main(string[] args)
-        {
-            ListNode node = new ListNode(9);
-
-            ListNode node2 = new ListNode(1);
-            ListNode p2 = node2;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-            node2.next = new ListNode(9);
-            node2 = node2.next;
-
-            Program p = new Program();
-
-            p.AddTwoNumbers(node, p2);
-
-           
-
-        }
-
         public class ListNode
         {
             public int val;
@@ -66,13 +34,13 @@ namespace MyLeetcode
                 {
                     num1 = l1.val;
                 }
-               
+
                 if (l2 != null)
                 {
                     num2 = l2.val;
                 }
 
-               //当前位与进位1相加 得的当前位的和
+                //当前位与进位1相加 得的当前位的和
                 int sum = num1 + num2;
 
                 if (sum >= 10)
@@ -100,16 +68,5 @@ namespace MyLeetcode
 
             return vtHead.next;
         }
-
-     
-
-
-      
     }
-
-  
-
-
-
-
 }

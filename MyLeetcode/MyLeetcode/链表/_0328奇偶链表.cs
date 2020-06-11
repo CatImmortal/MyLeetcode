@@ -67,17 +67,18 @@ namespace MyLeetcode.链表
 
             ListNode odd = head;  //奇节点链表指针
             ListNode even = head.next;  //偶节点链表指针
+
             ListNode evenHead = even;  //偶节点链表头指针
 
             while (even!=null && even.next != null)
             {
                 //将奇节点收集到一个链表里
-                odd.next = even.next;
-                odd = odd.next;
+                odd.next = even.next;  //奇节点链表的next就是偶节点的next
+                odd = odd.next;  //奇节点指针移动 此时该指针在当前偶节点的next处
 
                 //将偶节点收集到一个链表里
-                even.next = odd.next;
-                even = even.next;
+                even.next = odd.next;  //偶节点链表的next就是移动后的奇节点的next
+                even = even.next;  //偶节点指针移动  此时该指针在移动后的奇节点的next处
             }
 
             //最后将奇节点链表尾部和偶节点链表头部连接起来

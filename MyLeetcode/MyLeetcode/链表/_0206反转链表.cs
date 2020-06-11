@@ -66,6 +66,26 @@ namespace MyLeetcode.链表
             return node;
 
         }
+
+        public ListNode ReverseList3(ListNode head)
+        {
+            if (head == null || head.next == null)
+            {
+                return head;
+            }
+
+            ListNode prev = null;
+            ListNode curr = head;
+            while (curr != null)
+            {
+                ListNode nextTemp = curr.next;
+                curr.next = prev;
+                prev = curr;
+                curr = nextTemp;
+            }
+            return prev;
+
+        }
     }
 
 }
