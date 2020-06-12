@@ -48,6 +48,8 @@
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />
+    <Compile Include="链表\_0061旋转链表.cs" />
+    <Compile Include="链表\_0138复制带随机指针的链表.cs" />
     <Compile Include="链表\_0141环形链表.cs" />
     <Compile Include="链表\_0142环形链表2.cs" />
     <Compile Include="链表\_0160相交链表.cs" />
