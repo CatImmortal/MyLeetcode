@@ -4,19 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode
+namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/sort-list/
 
-    class Program
+    class _0148排序链表
     {
-        static void Main(string[] args)
-        {
-
-           
-
-        }
-
-
         // Definition for singly-linked list.
         public class ListNode
         {
@@ -44,13 +37,14 @@ namespace MyLeetcode
 
                 while (cur != null)
                 {
-                    ListNode left = cur;  
+                    ListNode left = cur;
                     ListNode right = Split(left, i);// left->@->@ right->@->@->@...
                     cur = Split(right, i);  // left->@->@ right->@->@  cur->@->...
-                    tail.next = MergeTwoLists(left, right);  //将tail与这次合并后的链表的头节点连接
+                    ListNode mergedHead = MergeTwoLists(left, right);  
+                    tail.next = mergedHead;//将tail与这次合并后的链表的头节点连接
                     while (tail.next != null)
                     {
-                        //最后保持tail为尾部
+                        //最后保持tail为这次合并后链表的尾部
                         tail = tail.next;
                     }
                 }
@@ -82,15 +76,15 @@ namespace MyLeetcode
         private ListNode Split(ListNode head, int step)
         {
             if (head == null) return null;
-
+            ListNode cur = head;
             for (int i = 1; head.next != null && i < step; i++)
             {
-                head = head.next;
+                cur = cur.next;
             }
 
-            ListNode right = head.next;
-            head.next = null;
-            return right;
+            ListNode newHead = cur.next;
+            cur.next = null;
+            return newHead;
         }
 
         private ListNode MergeTwoLists(ListNode l1, ListNode l2)
@@ -119,12 +113,5 @@ namespace MyLeetcode
 
             return prehead.next;
         }
-
     }
-
-
-
-
-
-
 }

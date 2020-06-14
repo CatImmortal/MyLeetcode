@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/palindrome-linked-list/
+
     class _0234回文链表
     {
         public class ListNode
