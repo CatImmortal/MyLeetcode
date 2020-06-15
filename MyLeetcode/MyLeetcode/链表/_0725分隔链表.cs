@@ -4,19 +4,10 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode
+namespace MyLeetcode.链表
 {
-
-    class Program
+    class _0725分隔链表
     {
-        static void Main(string[] args)
-        {
-            Program p = new Program();
-
-            
-        }
-
-
         // Definition for singly-linked list.
         public class ListNode
         {
@@ -81,12 +72,5 @@ namespace MyLeetcode
             return dummyHeads;
 
         }
-
     }
-
-
-
-
-
-
 }
