@@ -77,11 +77,14 @@ namespace MyLeetcode.链表
                         temp = temp.next;
                     }
                     //从头开始比对找到第一个值大于cur的节点temp.next 
-                    //把cur插入到temp.next前边,即成为新的temp.next
-                    prev.next = cur.next;
-                    cur.next = temp.next;
+                    //把cur插入到temp和temp.next的中间,即成为新的temp.next
+
+                    prev.next = cur.next;  //先移动prev到新位置
+
+                    cur.next = temp.next;  //插入到temp和temp.next的中间
                     temp.next = cur;
-                    cur = prev.next;
+
+                    cur = prev.next;  //最后移动cur到新位置
                 }
                 else
                 {

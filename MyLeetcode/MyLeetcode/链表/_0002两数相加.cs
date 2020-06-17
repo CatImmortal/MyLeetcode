@@ -23,50 +23,47 @@ namespace MyLeetcode.链表
 
         public ListNode AddTwoNumbers(ListNode l1, ListNode l2)
         {
-            ListNode vtHead = new ListNode();  //虚拟头节点
-            ListNode cur = vtHead;
+            ListNode dummyHead = new ListNode(0);
+            ListNode p1 = l1;
+            ListNode p2 = l2;
+            ListNode cur = dummyHead;
 
-            while (l1 != null || l2 != null)
+            int carry = 0;  //进位
+            while (p1 != null || p2 != null)
             {
-                int num1 = 0;
-                int num2 = 0;
-                if (l1 != null)
+                int x = 0;
+                int y = 0;
+                if (p1 != null)
                 {
-                    num1 = l1.val;
+                    x = p1.val;
                 }
-
-                if (l2 != null)
+                if (p2 != null)
                 {
-                    num2 = l2.val;
+                    y = p2.val;
                 }
+                int sum = carry + x + y;
+                carry = sum / 10;
 
-                //当前位与进位1相加 得的当前位的和
-                int sum = num1 + num2;
-
-                if (sum >= 10)
-                {
-                    //进位1
-                    if (l1.next == null)
-                    {
-                        l1.next = new ListNode(1);
-                    }
-                    else
-                    {
-                        l1.next.val += 1;
-                    }
-
-                    sum %= 10;
-                }
-
-
-                ListNode newNode = new ListNode(sum);
-                cur.next = newNode;
+                cur.next = new ListNode(sum % 10);
                 cur = cur.next;
-                l1 = l1?.next;
-                l2 = l2?.next;
+
+                //其中一个链表已经遍历完了 就会为null 此时仍然需要遍历剩下那个
+                if (p1 != null)
+                {
+                    p1 = p1.next;
+                }
+                if (p2 != null)
+                {
+                    p2 = p2.next;
+                }
             }
 
-            return vtHead.next;
+            if (carry > 0)
+            {
+                cur.next = new ListNode(carry);
+            }
+
+            return dummyHead.next;
         }
     }
 }

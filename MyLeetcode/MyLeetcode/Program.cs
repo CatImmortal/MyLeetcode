@@ -13,7 +13,13 @@ namespace MyLeetcode
         {
             Program p = new Program();
 
-            
+            ListNode n1 = new ListNode(2);
+            ListNode n2 = new ListNode(1);
+            ListNode n3 = new ListNode(5);
+            n1.next = n2;
+            n2.next = n3;
+
+            p.NextLargerNodes(n1);
         }
 
 
@@ -25,61 +31,33 @@ namespace MyLeetcode
             public ListNode(int x) { val = x; }
         }
 
-        public ListNode[] SplitListToParts(ListNode root, int k)
+
+        public int[] NextLargerNodes(ListNode head)
         {
-            if (root == null)
-            {
-                return new ListNode[k];
-            }
+            Stack<int> stack = new Stack<int>();
+            List<int> data = new List<int>();
+            List<int> res = new List<int>();
 
-            ListNode[] dummyHeads = new ListNode[k];
-            for (int i = 0; i < k; i++)
+            int index = 0;
+            ListNode cur = head;
+            while (cur !=  null)
             {
-                dummyHeads[i] = new ListNode(-1);
-            }
+                res.Add(0);
+                data.Add(cur.val);
 
-            int length = 0;
-            ListNode cur = root;
-            while (cur != null)
-            {
-                length++;
+                while (stack.Count > 0 && cur.val > data[stack.Peek()])
+                {
+                    //如果当前节点的值大于栈顶索引处节点的值
+                    //就更新res对应索引处的值
+                    res[stack.Pop()] = cur.val;
+                }
+
+                stack.Push(index);  //将下标存进栈里
+                index++;
                 cur = cur.next;
             }
 
-            int count = length / k;  //平分下来的数量
-            int mod = length % k;  //多出来的部分
-            cur = root;
-
-            for (int i = 0; i < k; i++)
-            {
-                ListNode tail = dummyHeads[i];
-                for (int j = 0; j < count && cur != null; j++)
-                {
-                    tail.next = cur;
-                    tail = cur;
-                    cur = cur.next;
-                }
-
-                //多出来的部分优先加到前面的链表上
-                if (mod > 0)
-                {
-                    tail.next = cur;
-                    tail = cur;
-                    cur = cur.next;
-                    mod--;
-                }
-
-                //切断链表
-                tail.next = null;
-            }
-
-            for (int i = 0; i < k; i++)
-            {
-                dummyHeads[i] = dummyHeads[i].next;
-            }
-
-            return dummyHeads;
-
+            return res.ToArray();
         }
 
     }

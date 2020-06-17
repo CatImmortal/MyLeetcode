@@ -66,10 +66,13 @@
     <Compile Include="链表\_0273删除链表中的节点.cs" />
     <Compile Include="链表\_0328奇偶链表.cs" />
     <Compile Include="链表\_0430扁平化多级双向链表.cs" />
+    <Compile Include="链表\_0445两数相加2.cs" />
     <Compile Include="链表\_0707设计链表.cs" />
     <Compile Include="链表\_0234回文链表.cs" />
     <Compile Include="链表\_0725分隔链表.cs" />
+    <Compile Include="链表\_0817链表组件.cs" />
     <Compile Include="链表\_0876链表的中间结点.cs" />
+    <Compile Include="链表\_1019链表中的下一个更大节点.cs" />
     <Compile Include="链表\_1290二进制链表转整数.cs" />
   </ItemGroup>
   <ItemGroup>
