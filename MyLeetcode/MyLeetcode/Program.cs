@@ -13,13 +13,22 @@ namespace MyLeetcode
         {
             Program p = new Program();
 
-            ListNode n1 = new ListNode(2);
-            ListNode n2 = new ListNode(1);
-            ListNode n3 = new ListNode(5);
+            ListNode n1 = new ListNode(1);
+            ListNode n2 = new ListNode(2);
+            ListNode n3 = new ListNode(2);
+            ListNode n4 = new ListNode(3);
+            ListNode n5 = new ListNode(4);
+            ListNode n6 = new ListNode(4);
+            ListNode n7 = new ListNode(5);
             n1.next = n2;
             n2.next = n3;
+            //n3.next = n4;
+            //n4.next = n5;
+            //n5.next = n6;
+            //n6.next = n7;
 
-            p.NextLargerNodes(n1);
+
+
         }
 
 
@@ -32,33 +41,27 @@ namespace MyLeetcode
         }
 
 
-        public int[] NextLargerNodes(ListNode head)
+        public ListNode RemoveZeroSumSublists(ListNode head)
         {
-            Stack<int> stack = new Stack<int>();
-            List<int> data = new List<int>();
-            List<int> res = new List<int>();
-
-            int index = 0;
-            ListNode cur = head;
-            while (cur !=  null)
+            ListNode dummyHead = new ListNode(-1);
+            dummyHead.next = head;
+            ListNode cur = dummyHead;
+            while (cur.next != null && cur.next.next!= null)
             {
-                res.Add(0);
-                data.Add(cur.val);
-
-                while (stack.Count > 0 && cur.val > data[stack.Peek()])
+                //连续两个节点总和为0 就删掉
+                if (cur.next.val + cur.next.next.val == 0)
                 {
-                    //如果当前节点的值大于栈顶索引处节点的值
-                    //就更新res对应索引处的值
-                    res[stack.Pop()] = cur.val;
+                    cur.next = cur.next.next.next;
                 }
-
-                stack.Push(index);  //将下标存进栈里
-                index++;
-                cur = cur.next;
+                else
+                {
+                    //否则后移指针
+                    cur = cur.next;
+                }
             }
-
-            return res.ToArray();
+            return dummyHead.next;
         }
+
 
     }
 
