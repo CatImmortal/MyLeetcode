@@ -4,42 +4,18 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode
+namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/remove-zero-sum-consecutive-nodes-from-linked-list/
 
-    class Program
+    class _1171从链表中删去总和值为零的连续节点
     {
-        static void Main(string[] args)
-        {
-            Program p = new Program();
-
-            ListNode n1 = new ListNode(1);
-            ListNode n2 = new ListNode(2);
-            ListNode n3 = new ListNode(2);
-            ListNode n4 = new ListNode(3);
-            ListNode n5 = new ListNode(4);
-            ListNode n6 = new ListNode(4);
-            ListNode n7 = new ListNode(5);
-            n1.next = n2;
-            n2.next = n3;
-            //n3.next = n4;
-            //n4.next = n5;
-            //n5.next = n6;
-            //n6.next = n7;
-
-
-
-        }
-
-
-        // Definition for singly-linked list.
         public class ListNode
         {
             public int val;
             public ListNode next;
             public ListNode(int x) { val = x; }
         }
-
 
         public ListNode RemoveZeroSumSublists(ListNode head)
         {
@@ -75,20 +51,45 @@ namespace MyLeetcode
                 {
                     isMove = true;
                 }
-                
+
             }
 
             return dummyHead.next;
-            
+
 
         }
 
 
+        public ListNode RemoveZeroSumSublists2(ListNode head)
+        {
+            ListNode dummyNode = new ListNode(0);
+            dummyNode.next = head;
+
+            //前缀和
+            Dictionary<int, ListNode> prefixSumDic = new Dictionary<int, ListNode>();
+
+            ListNode cur = dummyNode;
+            int sum = 0;
+            while (cur != null)
+            {
+                //建立前缀和与节点的映射
+                //如果同一前缀和出现多次，就映射到最后一次出现的那个节点
+                sum += cur.val;
+                prefixSumDic[sum] = cur;
+                cur = cur.next;
+            }
+
+            cur = dummyNode;
+            sum = 0;
+            while (cur != null)
+            {
+                //如果当前前缀和映射的节点不是cur节点，那么这一步会直接删除cur.next到当前前缀和映射的节点的所有节点
+                sum += cur.val;
+                cur.next = prefixSumDic[sum].next;  
+                cur = cur.next;
+            }
+
+            return dummyNode.next;
+        }
     }
-
-
-
-
-
-
 }
