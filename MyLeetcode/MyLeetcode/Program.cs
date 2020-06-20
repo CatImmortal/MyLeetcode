@@ -13,82 +13,85 @@ namespace MyLeetcode
         {
             Program p = new Program();
 
-            ListNode n1 = new ListNode(1);
-            ListNode n2 = new ListNode(2);
-            ListNode n3 = new ListNode(2);
-            ListNode n4 = new ListNode(3);
-            ListNode n5 = new ListNode(4);
-            ListNode n6 = new ListNode(4);
-            ListNode n7 = new ListNode(5);
-            n1.next = n2;
-            n2.next = n3;
-            //n3.next = n4;
-            //n4.next = n5;
-            //n5.next = n6;
-            //n6.next = n7;
+            TreeNode n1 = new TreeNode(1);
+            TreeNode n2 = new TreeNode(2);
+            TreeNode n3 = new TreeNode(2);
+            TreeNode n4= new TreeNode(2);
+            TreeNode n5 = new TreeNode(2);
 
+            n1.left = n2;
+            n1.right = n3;
 
+            n2.left = n4;
+            n3.left = n5;
+
+            p.IsSymmetric(n1);
 
         }
 
 
-        // Definition for singly-linked list.
-        public class ListNode
+        //Definition for a binary tree node.
+        public class TreeNode
         {
             public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
+            public TreeNode left;
+            public TreeNode right;
+            public TreeNode(int x) { val = x; }
         }
 
 
-        public ListNode RemoveZeroSumSublists(ListNode head)
+        public bool IsSymmetric(TreeNode root)
         {
-            ListNode dummyHead = new ListNode(-1);
-            dummyHead.next = head;
-
-            ListNode p1 = dummyHead;
-            bool isMove = true;
-            while (p1 != null && p1.next != null)
+            if (root == null)
             {
-                ListNode p2 = p1.next;
-                int sum = 0;
-                while (p2 != null)
-                {
-                    sum += p2.val;
-                    if (sum == 0)
-                    {
-                        p1.next = p2.next;
-                        isMove = false;
-                        break;
-                    }
-                    else
-                    {
-                        p2 = p2.next;
-                    }
-                }
-
-                if (isMove)
-                {
-                    p1 = p1.next;
-                }
-                else
-                {
-                    isMove = true;
-                }
-                
+                //没有根节点 对称
+                return false;
             }
 
-            return dummyHead.next;
-            
+            if (root.left == null && root.right == null)
+            {
+                //只有根节点 对称
+                return true;
+            }
+
+            if (root.left == null || root.right == null )
+            {
+                //根节点只有左子树或只有右子树 不对称
+                return false;
+            }
+
+
+
+            return true;
 
         }
 
 
+        public void Func(int num,Action callback)
+        {
+            for (int i = 0; i < num; i++)
+            {
+                callback();
+            }
+        }
+
+        public void Func2<T>(IEnumerable<T> c, Action<T> callback)
+        {
+            foreach (var item in c)
+            {
+                callback(item);
+            }
+        }
     }
 
 
 
-
-
-
 }
+
+
+
+
+
+
+
+

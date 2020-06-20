@@ -47,6 +47,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="字符串\_0014最长公共前缀.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
+    <Compile Include="树\_0094二叉树的中序遍历.cs" />
+    <Compile Include="树\_0101对称二叉树.cs" />
+    <Compile Include="树\_0102二叉树的层序遍历.cs" />
+    <Compile Include="树\_0104二叉树的最大深度.cs" />
+    <Compile Include="树\_0112路径总和.cs" />
+    <Compile Include="树\_0144二叉树的前序遍历.cs" />
+    <Compile Include="树\_0145二叉树的后序遍历.cs" />
+    <Compile Include="树\_0226翻转二叉树.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />
