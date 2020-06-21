@@ -57,7 +57,7 @@ namespace MyLeetcode.树
 
                 if (stack.Count > 0)
                 {
-                    //push到头了 取一个出来 然后push一个right进去
+                    //push到头了 取一个出来操作 然后push一个right进去
                     node = stack.Pop();
                     result.Add(node.val);
                     node = node.right;
