@@ -4,33 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode
+namespace MyLeetcode.树
 {
+    //https://leetcode-cn.com/problems/populating-next-right-pointers-in-each-node/
 
-    class Program
+    class _0116填充每个节点的下一个右侧节点指针
     {
-        static void Main(string[] args)
-        {
-            Program p = new Program();
-
-            TreeNode n1 = new TreeNode(1);
-            TreeNode n2 = new TreeNode(2);
-            TreeNode n3 = new TreeNode(2);
-            TreeNode n4 = new TreeNode(2);
-            TreeNode n5 = new TreeNode(2);
-
-
-        }
-
-
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         public class Node
         {
@@ -61,7 +40,7 @@ namespace MyLeetcode
             return root;
         }
 
-        private void Connect(Node root,Node nextNode)
+        private void Connect(Node root, Node brother)
         {
             if (root == null || (root.left == null && root.right == null))
             {
@@ -69,21 +48,10 @@ namespace MyLeetcode
             }
 
             root.left.next = root.right;
-            root.right.next = nextNode;
+            root.right.next = brother?.left;
 
-            Connect(root.left, root.right.left);
-            Connect(root.right, nextNode?.left);
+            Connect(root.left, root.right);
+            Connect(root.right, brother?.left);
         }
     }
-
-
-
 }
-
-
-
-
-
-
-
-

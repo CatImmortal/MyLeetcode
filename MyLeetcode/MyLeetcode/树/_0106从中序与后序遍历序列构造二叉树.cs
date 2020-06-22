@@ -43,18 +43,29 @@ namespace MyLeetcode.树
                 return null;
             }
 
-            //后序遍历结果的末尾 是子树根节点
+            //后序遍历数组的末尾 是子树根节点
             TreeNode node = new TreeNode(postorder[postR]);
 
-            //取出根节点在中序遍历结果中的对应索引
-            int head = dict[postorder[postR]];
+            int rootIn = dict[postorder[postR]];  //根节点在中序遍历数组的位置
+
+            int leftInL = inL;
+            int leftInR = rootIn - 1;
+
+            int rightInL = rootIn + 1;
+            int rightInR = inR;
+
+            int leftTreeLenght = leftInR - leftInL;  //左子树长度
 
 
-            //head - inL就是左子树长度
-            node.left = BuildTree(inorder, postorder, inL, head - 1, postL, postL + (head - inL) - 1);
-            node.right = BuildTree(inorder, postorder, head + 1, inR, postL + (head - inL), postR - 1);
+            int leftPostL = postL;
+            int leftPostR = postL + leftTreeLenght;
+
+            int rightPostL = leftPostR + 1;
+            int rightPostR = postR - 1;
+
+            node.left = BuildTree(inorder, postorder,leftInL,leftInR,leftPostL,leftPostR);
+            node.right = BuildTree(inorder, postorder, rightInL,rightInR,rightPostL,rightPostR);
             
-
             return node;
         }
     }
