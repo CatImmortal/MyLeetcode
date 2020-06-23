@@ -46,6 +46,7 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="字符串\_0014最长公共前缀.cs" />
+    <Compile Include="字符串\_0067二进制求和.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
     <Compile Include="树\_0101对称二叉树.cs" />

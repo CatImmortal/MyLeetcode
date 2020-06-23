@@ -57,23 +57,60 @@ namespace MyLeetcode
 
         public Node Connect(Node root)
         {
-            Connect(root, null);
+            if (root == null || (root.left == null && root.right == null))
+            {
+                return root;
+            }
+
+            if (root.left != null && root.right != null)
+            {
+                root.left.next = root.right;
+                root.right.next = GetNextNoNullChild(root);
+            }
+
+            if (root.left == null)
+            {
+                root.right.next = GetNextNoNullChild(root);
+            }
+
+            if (root.right == null)
+            {
+                root.left.next = GetNextNoNullChild(root);
+            }
+
+            //这里要注意：先递归右子树，否则右子树根节点next关系没建立好，左子树到右子树子节点无法正确挂载
+            root.right = Connect(root.right);
+            root.left = Connect(root.left);
+
             return root;
         }
 
-        private void Connect(Node root,Node nextNode)
+     
+
+        /// <summary>
+        /// 一路向右找到有可作为next指向的子节点的根节点
+        /// </summary>
+        private Node GetNextNoNullChild(Node root)
         {
-            if (root == null || (root.left == null && root.right == null))
+            while (root.next != null)
             {
-                return;
+                if (root.next.left != null)
+                {
+                    return root.next.left;
+                }
+
+                if (root.next.right != null)
+                {
+                    return root.next.right;
+                }
+
+                root = root.next;
             }
 
-            root.left.next = root.right;
-            root.right.next = nextNode;
-
-            Connect(root.left, root.right.left);
-            Connect(root.right, nextNode?.left);
+            return null;
         }
+
+
     }
 
 
