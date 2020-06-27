@@ -77,7 +77,7 @@ namespace MyLeetcode.链表
         {
             if (head == null) return null;
             ListNode cur = head;
-            for (int i = 1; head.next != null && i < step; i++)
+            for (int i = 1; cur.next != null && i < step; i++)
             {
                 cur = cur.next;
             }

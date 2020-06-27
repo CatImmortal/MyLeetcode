@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/split-linked-list-in-parts/
+
     class _0725分隔链表
     {
         // Definition for singly-linked list.
