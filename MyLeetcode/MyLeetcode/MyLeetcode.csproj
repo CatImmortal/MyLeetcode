@@ -50,6 +50,7 @@
     <Compile Include="字符串\_0067二进制求和.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
+    <Compile Include="树\_0100相同的树.cs" />
     <Compile Include="树\_0101对称二叉树.cs" />
     <Compile Include="树\_0102二叉树的层序遍历.cs" />
     <Compile Include="树\_0104二叉树的最大深度.cs" />
@@ -68,10 +69,12 @@
     <Compile Include="树\_0589N叉树的前序遍历.cs" />
     <Compile Include="树\_0590N叉树的后序遍历.cs" />
     <Compile Include="树\_0617合并二叉树.cs" />
+    <Compile Include="树\_0669修剪二叉搜索树.cs" />
     <Compile Include="树\_0700二叉搜索树中的搜索.cs" />
     <Compile Include="树\_0889根据前序和后序遍历构造二叉树.cs" />
     <Compile Include="树\_0897递增顺序查找树.cs" />
     <Compile Include="树\_0938二叉搜索树的范围和.cs" />
+    <Compile Include="树\_0965单值二叉树.cs" />
     <Compile Include="树\_1008先序遍历构造二叉树.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />

@@ -43,7 +43,7 @@ namespace MyLeetcode.树
             }
 
 
-            //
+            
             int mid = (int)Math.Ceiling((left + right) / 2.0f);
 
             TreeNode root = new TreeNode(nums[mid]);
