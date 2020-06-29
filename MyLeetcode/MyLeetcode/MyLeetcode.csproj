@@ -56,6 +56,7 @@
     <Compile Include="树\_0104二叉树的最大深度.cs" />
     <Compile Include="树\_0105从前序与中序遍历序列构造二叉树.cs" />
     <Compile Include="树\_0106从中序与后序遍历序列构造二叉树.cs" />
+    <Compile Include="树\_0107二叉树的层次遍历2.cs" />
     <Compile Include="树\_0108将有序数组转换为二叉搜索树.cs" />
     <Compile Include="树\_0112路径总和.cs" />
     <Compile Include="树\_0116填充每个节点的下一个右侧节点指针.cs" />
@@ -63,12 +64,15 @@
     <Compile Include="树\_0144二叉树的前序遍历.cs" />
     <Compile Include="树\_0145二叉树的后序遍历.cs" />
     <Compile Include="树\_0226翻转二叉树.cs" />
+    <Compile Include="树\_0235二叉搜索树的最近公共祖先.cs" />
     <Compile Include="树\_0236二叉树的最近公共祖先.cs" />
+    <Compile Include="树\_0257二叉树的所有路径.cs" />
     <Compile Include="树\_0297二叉树的序列化与反序列化.cs" />
     <Compile Include="树\_0559N叉树的最大深度.cs" />
     <Compile Include="树\_0589N叉树的前序遍历.cs" />
     <Compile Include="树\_0590N叉树的后序遍历.cs" />
     <Compile Include="树\_0617合并二叉树.cs" />
+    <Compile Include="树\_0637二叉树的层平均值.cs" />
     <Compile Include="树\_0669修剪二叉搜索树.cs" />
     <Compile Include="树\_0700二叉搜索树中的搜索.cs" />
     <Compile Include="树\_0889根据前序和后序遍历构造二叉树.cs" />
