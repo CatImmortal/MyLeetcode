@@ -10,5 +10,41 @@ namespace MyLeetcode.树
 
     class _0257二叉树的所有路径
     {
+        //Definition for a binary tree node.
+        public class TreeNode
+        {
+            public int val;
+            public TreeNode left;
+            public TreeNode right;
+            public TreeNode(int x) { val = x; }
+        }
+
+        List<string> ans = new List<string>();
+
+        public IList<string> BinaryTreePaths(TreeNode root)
+        {
+            Preorder(root, "");
+            return ans;
+        }
+
+        private void Preorder(TreeNode root, string str)
+        {
+            if (root == null)
+            {
+                return;
+            }
+
+            if (root.left == null && root.right == null)
+            {
+                str += root.val;
+                ans.Add(str);
+                return;
+            }
+
+            str += root.val + "->";
+            Preorder(root.left, str);
+            Preorder(root.right, str);
+
+        }
     }
 }

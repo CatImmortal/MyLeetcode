@@ -80,6 +80,7 @@
     <Compile Include="树\_0938二叉搜索树的范围和.cs" />
     <Compile Include="树\_0965单值二叉树.cs" />
     <Compile Include="树\_1008先序遍历构造二叉树.cs" />
+    <Compile Include="树\_1022从根到叶的二进制数之和.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />
