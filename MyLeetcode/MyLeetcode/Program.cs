@@ -74,62 +74,37 @@ namespace MyLeetcode
         }
 
 
-
-        public int SumRootToLeaf(TreeNode root)
+        public bool LeafSimilar(TreeNode root1, TreeNode root2)
         {
-            List<string> result = BinaryTreePaths(root);
-            int sum = 0;
-            for (int i = 0; i < result.Count; i++)
+
+            Stack<TreeNode> stack1 = new Stack<TreeNode>();
+
+            if (root1 != null)
             {
-                sum += BinaryStr2Int(result[i]);
-            }
-            return sum;
-        }
-
-        public List<string> BinaryTreePaths(TreeNode root)
-        {
-            List<string> result = new List<string>();
-            Preorder(root, "",result);
-            return result;
-        }
-
-        private void Preorder(TreeNode root, string str, List<string> result)
-        {
-            if (root == null)
-            {
-                return;
-            }
-
-            str += root.val;
-
-            if (root.left == null && root.right == null)
-            {
-                result.Add(str);
-                return;
+                stack1.Push(root1);
             }
 
 
-            Preorder(root.left, str, result);
-            Preorder(root.right, str, result);
-
-        }
-
-
-        private int BinaryStr2Int(string str)
-        {
-            int sum = 0;
-            int pow = 0;
-            for (int i = str.Length - 1; i >= 0; i--)
+            while (stack1.Count != 0)
             {
-                if (str[i] == '1')
+                TreeNode node = stack1.Pop();
+                result.Add(node.val);
+
+                //pop root后先push right，再push left，以实现前序遍历
+
+                if (node.right != null)
                 {
-                    sum += (int)Math.Pow(2, pow);
+                    stack1.Push(node.right);
                 }
 
-                pow++;
-            }
+                if (node.left != null)
+                {
+                    stack1.Push(node.left);
+                }
 
-            return sum;
+
+
+            }
         }
 
 

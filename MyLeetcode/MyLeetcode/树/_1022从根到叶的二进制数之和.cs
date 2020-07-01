@@ -77,5 +77,30 @@ namespace MyLeetcode.树
 
             return sum;
         }
+
+        int mod = (int)(Math.Pow(10, 9) + 7);
+
+        public int SumRootToLeaf2(TreeNode root)
+        {
+            return SumRootToLeaf2Helper(root, 0);   
+        }
+
+        private int SumRootToLeaf2Helper(TreeNode root,int n)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            n = n * 2 + root.val;
+
+            if (root.left == null && root.right == null)
+            {
+                return n;
+            }
+
+            return (SumRootToLeaf2Helper(root.left, n) + SumRootToLeaf2Helper(root.right, n)) % mod;
+
+        }
     }
 }

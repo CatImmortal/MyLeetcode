@@ -75,6 +75,7 @@
     <Compile Include="树\_0637二叉树的层平均值.cs" />
     <Compile Include="树\_0669修剪二叉搜索树.cs" />
     <Compile Include="树\_0700二叉搜索树中的搜索.cs" />
+    <Compile Include="树\_0872叶子相似的树.cs" />
     <Compile Include="树\_0889根据前序和后序遍历构造二叉树.cs" />
     <Compile Include="树\_0897递增顺序查找树.cs" />
     <Compile Include="树\_0938二叉搜索树的范围和.cs" />
