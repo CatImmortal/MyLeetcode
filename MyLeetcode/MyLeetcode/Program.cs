@@ -21,16 +21,7 @@ namespace MyLeetcode
             TreeNode n6 = new TreeNode(0);
             TreeNode n7 = new TreeNode(1);
 
-            n1.left = n2;
-            n1.right = n3;
-
-            n2.left = n4;
-            n2.right = n5;
-
-            n3.left = n6;
-            n3.right = n7;
-
-            p.SumRootToLeaf(n1);
+            
         }
 
 
@@ -73,38 +64,16 @@ namespace MyLeetcode
             public TreeNode(int x) { val = x; }
         }
 
+        List<List<int>> ans = new List<List<int>>();
+        List<int> list = new List<int>();
+        public IList<IList<int>> PathSum(TreeNode root, int sum)
+        {
+            
+        }
 
-        public bool LeafSimilar(TreeNode root1, TreeNode root2)
+        private void PreOrder(TreeNode root,int sum)
         {
 
-            Stack<TreeNode> stack1 = new Stack<TreeNode>();
-
-            if (root1 != null)
-            {
-                stack1.Push(root1);
-            }
-
-
-            while (stack1.Count != 0)
-            {
-                TreeNode node = stack1.Pop();
-                result.Add(node.val);
-
-                //pop root后先push right，再push left，以实现前序遍历
-
-                if (node.right != null)
-                {
-                    stack1.Push(node.right);
-                }
-
-                if (node.left != null)
-                {
-                    stack1.Push(node.left);
-                }
-
-
-
-            }
         }
 
 
