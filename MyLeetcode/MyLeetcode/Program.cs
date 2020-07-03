@@ -14,14 +14,19 @@ namespace MyLeetcode
             Program p = new Program();
 
             TreeNode n1 = new TreeNode(1);
-            TreeNode n2 = new TreeNode(0);
-            TreeNode n3 = new TreeNode(1);
-            TreeNode n4 = new TreeNode(0);
-            TreeNode n5 = new TreeNode(1);
-            TreeNode n6 = new TreeNode(0);
-            TreeNode n7 = new TreeNode(1);
+            TreeNode n2 = new TreeNode(2);
+            TreeNode n3 = new TreeNode(3);
+            TreeNode n4 = new TreeNode(4);
+            TreeNode n5 = new TreeNode(5);
 
-            
+            n1.left = n2;
+            n1.right = n3;
+
+            n2.left = n4;
+            n2.right = n5;
+
+            int sum = p.SumOfLeftLeaves(n1);
+            Console.WriteLine(sum);
         }
 
 
@@ -64,18 +69,35 @@ namespace MyLeetcode
             public TreeNode(int x) { val = x; }
         }
 
-        List<List<int>> ans = new List<List<int>>();
-        List<int> list = new List<int>();
-        public IList<IList<int>> PathSum(TreeNode root, int sum)
+        public bool IsBalanced(TreeNode root)
         {
+            if (root == null)
+            {
+                return true;
+            }
+
             
+            bool isBalanced = Math.Abs(GetHeight(root.left) - GetHeight(root.right)) <= 1;
+
+            return isBalanced && IsBalanced(root.left) && IsBalanced(root.right);
         }
 
-        private void PreOrder(TreeNode root,int sum)
+        /// <summary>
+        /// 获取树高度
+        /// </summary>
+        private int GetHeight(TreeNode root)
         {
+            if (root == null)
+            {
+                return 0;
+            }
 
+            int leftHeight = GetHeight(root.left);
+            int rightHeight = GetHeight(root.right);
+            int height = Math.Max(leftHeight, rightHeight) + 1;
+
+            return height;
         }
-
 
     }
 
