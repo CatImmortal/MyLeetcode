@@ -1,8 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.IO.Pipes;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+using System.Xml;
 
 namespace MyLeetcode
 {
@@ -19,14 +22,13 @@ namespace MyLeetcode
             TreeNode n4 = new TreeNode(4);
             TreeNode n5 = new TreeNode(5);
 
-            n1.left = n2;
-            n1.right = n3;
 
-            n2.left = n4;
+            n1.right = n2;
+
+            n2.left = n3;
             n2.right = n5;
 
-            int sum = p.SumOfLeftLeaves(n1);
-            Console.WriteLine(sum);
+            p.IsCousins(n1, 5, 3);
         }
 
 
@@ -69,35 +71,44 @@ namespace MyLeetcode
             public TreeNode(int x) { val = x; }
         }
 
-        public bool IsBalanced(TreeNode root)
+        int min1 = int.MaxValue;
+        int min2 = int.MaxValue;
+        bool flag = false;
+
+        public int FindSecondMinimumValue(TreeNode root)
+        {
+            PreOrder(root);
+            if (! flag)
+            {
+                return -1;
+            }
+            return min2;
+        }
+
+        private void PreOrder(TreeNode root)
         {
             if (root == null)
             {
-                return true;
+                return;
             }
 
-            
-            bool isBalanced = Math.Abs(GetHeight(root.left) - GetHeight(root.right)) <= 1;
-
-            return isBalanced && IsBalanced(root.left) && IsBalanced(root.right);
-        }
-
-        /// <summary>
-        /// 获取树高度
-        /// </summary>
-        private int GetHeight(TreeNode root)
-        {
-            if (root == null)
+            if (root.val < min1)
             {
-                return 0;
+                min1 = root.val;
+            }
+            else if (root.val > min1 && root.val <= min2)
+            {
+                min2 = root.val;
+                flag = true;
             }
 
-            int leftHeight = GetHeight(root.left);
-            int rightHeight = GetHeight(root.right);
-            int height = Math.Max(leftHeight, rightHeight) + 1;
-
-            return height;
+            PreOrder(root.left);
+            PreOrder(root.right);
         }
+
+
+
+
 
     }
 
