@@ -69,35 +69,12 @@ namespace MyLeetcode
             public TreeNode(int x) { val = x; }
         }
 
-        public bool IsBalanced(TreeNode root)
+
+        public int LongestUnivaluePath(TreeNode root)
         {
-            if (root == null)
-            {
-                return true;
-            }
 
-            
-            bool isBalanced = Math.Abs(GetHeight(root.left) - GetHeight(root.right)) <= 1;
-
-            return isBalanced && IsBalanced(root.left) && IsBalanced(root.right);
         }
 
-        /// <summary>
-        /// 获取树高度
-        /// </summary>
-        private int GetHeight(TreeNode root)
-        {
-            if (root == null)
-            {
-                return 0;
-            }
-
-            int leftHeight = GetHeight(root.left);
-            int rightHeight = GetHeight(root.right);
-            int height = Math.Max(leftHeight, rightHeight) + 1;
-
-            return height;
-        }
 
     }
 
