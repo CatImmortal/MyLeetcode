@@ -10,13 +10,6 @@ namespace MyLeetcode.链表
 
     class _0273删除链表中的节点
     {
-        // Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         public void DeleteNode(ListNode node)
         {

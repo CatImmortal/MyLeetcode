@@ -11,15 +11,6 @@ namespace MyLeetcode.树
     class _0235二叉搜索树的最近公共祖先
     {
 
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         public TreeNode LowestCommonAncestor(TreeNode root, TreeNode p, TreeNode q)
         {
             if (root == null || root == p || root == q)

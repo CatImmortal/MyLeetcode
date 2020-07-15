@@ -6,6 +6,42 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode
 {
+    //Definition for singly-linked list.
+    public class ListNode
+    {
+        public int val;
+        public ListNode next;
+        public ListNode(int x) { val = x; }
+    }
+
+    // Definition for a Node.
+    public class Node
+    {
+        public int val;
+        public IList<Node> children;
+
+        public Node() { }
+
+        public Node(int _val)
+        {
+            val = _val;
+        }
+
+        public Node(int _val, IList<Node> _children)
+        {
+            val = _val;
+            children = _children;
+        }
+    }
+
+    //Definition for a binary tree node.
+    public class TreeNode
+    {
+        public int val;
+        public TreeNode left;
+        public TreeNode right;
+        public TreeNode(int x) { val = x; }
+    }
 
     class Program
     {
@@ -13,68 +49,50 @@ namespace MyLeetcode
         {
             Program p = new Program();
 
-            TreeNode n1 = new TreeNode(1);
-            TreeNode n2 = new TreeNode(2);
-            TreeNode n3 = new TreeNode(3);
-            TreeNode n4 = new TreeNode(4);
-            TreeNode n5 = new TreeNode(5);
+            TreeNode n1 = new TreeNode(2);
+            TreeNode n2 = new TreeNode(1);
+            TreeNode n3 = new TreeNode(4);
+
+            TreeNode n4 = new TreeNode(1);
+            TreeNode n5 = new TreeNode(0);
+            TreeNode n6 = new TreeNode(3);
 
             n1.left = n2;
             n1.right = n3;
 
-            n2.left = n4;
-            n2.right = n5;
+            n4.left = n5;
+            n4.right = n6;
 
-            int[] nums = { 3, 2, 1, 6, 0, 5 };
-            TreeNode node = p.ConstructMaximumBinaryTree(nums);
             Console.WriteLine(666);
         }
 
 
-        //Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
-
-
-
-        // Definition for a Node.
-        public class Node
-        {
-            public int val;
-            public IList<Node> children;
-
-            public Node() { }
-
-            public Node(int _val)
-            {
-                val = _val;
-            }
-
-            public Node(int _val, IList<Node> _children)
-            {
-                val = _val;
-                children = _children;
-            }
-        }
-
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
+       
 
 
     }
 
 
+    public class BSTIterator
+    {
 
+        public BSTIterator(TreeNode root)
+        {
+
+        }
+
+        /** @return the next smallest number */
+        public int Next()
+        {
+
+        }
+
+        /** @return whether we have a next smallest number */
+        public bool HasNext()
+        {
+
+        }
+    }
 }
 
 

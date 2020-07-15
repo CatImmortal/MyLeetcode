@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0938二叉搜索树的范围和
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         public int RangeSumBST(TreeNode root, int L, int R)
         {

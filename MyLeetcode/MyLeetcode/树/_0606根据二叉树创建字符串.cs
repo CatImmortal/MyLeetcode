@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0606根据二叉树创建字符串
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         StringBuilder sb = new StringBuilder();
 

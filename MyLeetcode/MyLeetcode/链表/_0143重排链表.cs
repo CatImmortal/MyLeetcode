@@ -11,14 +11,6 @@ namespace MyLeetcode.链表
     class _0143重排链表
     {
 
-        // Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
-
 
         public void ReorderList(ListNode head)
         {

@@ -11,14 +11,6 @@ namespace MyLeetcode.树
 
     class _0993二叉树的堂兄弟节点
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         private Dictionary<int, int> depthDict = new Dictionary<int, int>();
         private Dictionary<int, TreeNode> parentDict = new Dictionary<int, TreeNode>();

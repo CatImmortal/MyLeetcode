@@ -10,12 +10,6 @@ namespace MyLeetcode.链表
 
     class _1171从链表中删去总和值为零的连续节点
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         public ListNode RemoveZeroSumSublists(ListNode head)
         {

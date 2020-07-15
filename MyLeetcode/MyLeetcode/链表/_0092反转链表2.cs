@@ -10,14 +10,6 @@ namespace MyLeetcode.链表
 
     class _0092反转链表2
     {
-        // Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
-
         public ListNode ReverseBetween(ListNode head, int m, int n)
         {
             int counter = 0;

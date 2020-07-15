@@ -10,15 +10,6 @@ namespace MyLeetcode.树
 
     class _0572另一个树的子树
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
 
         public bool IsSubtree(TreeNode s, TreeNode t)
         {

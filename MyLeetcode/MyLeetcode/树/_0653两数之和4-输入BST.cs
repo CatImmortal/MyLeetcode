@@ -8,15 +8,6 @@ namespace MyLeetcode.树
 {
     class _0653两数之和4_输入BST
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         public bool FindTarget(TreeNode root, int k)
         {
             List<int> result = new List<int>();

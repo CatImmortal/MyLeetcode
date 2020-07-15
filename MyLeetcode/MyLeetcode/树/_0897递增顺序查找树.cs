@@ -11,15 +11,6 @@ namespace MyLeetcode.树
     class _0897递增顺序查找树
     {
 
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         public TreeNode IncreasingBST(TreeNode root)
         {
             if (root == null || (root.left == null && root.right == null))

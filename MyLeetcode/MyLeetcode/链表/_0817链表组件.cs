@@ -10,12 +10,6 @@ namespace MyLeetcode.链表
 
     class _0817链表组件
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         public int NumComponents(ListNode head, int[] G)
         {

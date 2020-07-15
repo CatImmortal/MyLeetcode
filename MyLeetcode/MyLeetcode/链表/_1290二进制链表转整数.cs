@@ -6,17 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/
+
     class _1290二进制链表转整数
     {
-        //https://leetcode-cn.com/problems/convert-binary-number-in-a-linked-list-to-integer/
-
-        // Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         public int GetDecimalValue(ListNode head)
         {

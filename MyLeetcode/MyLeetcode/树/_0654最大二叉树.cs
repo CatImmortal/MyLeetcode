@@ -10,14 +10,7 @@ namespace MyLeetcode.树
 
     class _0654最大二叉树
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
+
 
         public TreeNode ConstructMaximumBinaryTree(int[] nums)
         {

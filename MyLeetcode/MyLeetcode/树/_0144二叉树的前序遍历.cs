@@ -10,14 +10,7 @@ namespace MyLeetcode.树
 
     class _0144二叉树的前序遍历
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
+
 
         private List<int> result = new List<int>();
 

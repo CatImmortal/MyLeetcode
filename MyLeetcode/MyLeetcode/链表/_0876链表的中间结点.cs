@@ -6,16 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode.链表
 {
+    //https://leetcode-cn.com/problems/middle-of-the-linked-list/
+
     class _0876链表的中间结点
     {
-        //https://leetcode-cn.com/problems/middle-of-the-linked-list/
-
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         public ListNode MiddleNode(ListNode head)
         {

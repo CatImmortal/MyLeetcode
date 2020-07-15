@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0257二叉树的所有路径
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         List<string> ans = new List<string>();
 

@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _1379找出克隆二叉树中的相同节点
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         public TreeNode GetTargetCopy(TreeNode original, TreeNode cloned, TreeNode target)
         {

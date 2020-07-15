@@ -10,16 +10,6 @@ namespace MyLeetcode.链表
 
     class _0141环形链表
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x)
-            {
-                val = x;
-                next = null;
-            }
-        }
 
         public bool HasCycle(ListNode head)
         {

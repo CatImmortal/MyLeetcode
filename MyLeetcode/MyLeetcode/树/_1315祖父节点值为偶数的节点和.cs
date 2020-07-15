@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _1315祖父节点值为偶数的节点和
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         private int ans = 0;
 

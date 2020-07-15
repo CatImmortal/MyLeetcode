@@ -10,15 +10,6 @@ namespace MyLeetcode.树
 
     class _0617合并二叉树
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         public TreeNode MergeTrees(TreeNode t1, TreeNode t2)
         {
             if (t1 == null)

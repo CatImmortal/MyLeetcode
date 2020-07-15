@@ -10,20 +10,10 @@ namespace MyLeetcode.链表
 
     class _0021合并两个有序链表
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int val = 0, ListNode next = null)
-            {
-                this.val = val;
-                this.next = next;
-            }
-        }
 
         public ListNode MergeTwoLists(ListNode l1, ListNode l2)
         {
-            ListNode prehead = new ListNode();
+            ListNode prehead = new ListNode(0);
 
             ListNode prev = prehead;
             while (l1 != null && l2 != null)

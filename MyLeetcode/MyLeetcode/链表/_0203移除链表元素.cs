@@ -10,19 +10,6 @@ namespace MyLeetcode.链表
 
     class _0203移除链表元素
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x)
-            {
-                val = x;
-                next = null;
-            }
-
-
-
-        }
 
         public ListNode RemoveElements(ListNode head, int val)
         {

@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0501二叉搜索树中的众数
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         private List<int> values = new List<int>();  //存放众数的列表
         int curVal = 0;  //当前需要统计出现次数的数字

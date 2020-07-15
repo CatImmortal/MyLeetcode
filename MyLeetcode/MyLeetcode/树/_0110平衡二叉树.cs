@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0110平衡二叉树
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         private Dictionary<TreeNode, int> dict = new Dictionary<TreeNode, int>();
 

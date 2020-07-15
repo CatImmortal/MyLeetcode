@@ -10,15 +10,6 @@ namespace MyLeetcode.树
 
     class _0107二叉树的层次遍历2
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         public IList<IList<int>> LevelOrderBottom(TreeNode root)
         {
             IList<IList<int>> result = LevelOrder(root);

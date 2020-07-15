@@ -10,13 +10,6 @@ namespace MyLeetcode.链表
 
     class _0147对链表进行插入排序
     {
-        // Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
         public ListNode InsertionSortList(ListNode head)
         {

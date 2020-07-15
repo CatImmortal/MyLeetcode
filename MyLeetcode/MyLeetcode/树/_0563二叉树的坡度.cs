@@ -10,15 +10,6 @@ namespace MyLeetcode.树
 
     class _0563二叉树的坡度
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         
 
         public int FindTilt(TreeNode root)

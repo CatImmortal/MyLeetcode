@@ -10,13 +10,6 @@ namespace MyLeetcode.链表
 
     class _1019链表中的下一个更大节点
     {
-        // Definition for singly-linked list.
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x) { val = x; }
-        }
 
 
         public int[] NextLargerNodes(ListNode head)

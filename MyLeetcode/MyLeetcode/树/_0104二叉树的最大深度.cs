@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0104二叉树的最大深度
     {
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
 
         public int MaxDepth(TreeNode root)
         {

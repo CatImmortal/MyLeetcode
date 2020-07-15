@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0700二叉搜索树中的搜索
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         public TreeNode SearchBST(TreeNode root, int val)
         {

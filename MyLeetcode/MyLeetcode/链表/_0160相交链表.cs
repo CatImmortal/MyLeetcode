@@ -10,16 +10,6 @@ namespace MyLeetcode.链表
 
     class _160相交链表
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x)
-            {
-                val = x;
-                next = null;
-            }
-        }
 
     public ListNode GetIntersectionNode(ListNode headA, ListNode headB)
     {

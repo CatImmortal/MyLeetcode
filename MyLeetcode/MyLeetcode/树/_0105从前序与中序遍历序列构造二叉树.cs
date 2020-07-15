@@ -6,18 +6,10 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode.树
 {
+    //https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
+
     class _0105从前序与中序遍历序列构造二叉树
     {
-        //https://leetcode-cn.com/problems/construct-binary-tree-from-preorder-and-inorder-traversal/
-
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         /// <summary>
         /// 存储中序遍历数组的元素值与对应下标

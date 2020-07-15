@@ -10,25 +10,6 @@ namespace MyLeetcode.树
 
     class _0559N叉树的最大深度
     {
-        // Definition for a Node.
-        public class Node
-        {
-            public int val;
-            public IList<Node> children;
-
-            public Node() { }
-
-            public Node(int _val)
-            {
-                val = _val;
-            }
-
-            public Node(int _val, IList<Node> _children)
-            {
-                val = _val;
-                children = _children;
-            }
-        }
 
         private int ans = 0;
 

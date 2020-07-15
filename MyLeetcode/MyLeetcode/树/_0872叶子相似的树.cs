@@ -10,13 +10,6 @@ namespace MyLeetcode.树
 
     class _0872叶子相似的树
     {
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
 
         public bool LeafSimilar(TreeNode root1, TreeNode root2)

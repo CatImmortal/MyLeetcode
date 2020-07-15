@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0538把二叉搜索树转换为累加树
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         public TreeNode ConvertBST(TreeNode root)
         {

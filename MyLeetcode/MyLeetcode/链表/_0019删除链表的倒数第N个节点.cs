@@ -10,17 +10,6 @@ namespace MyLeetcode.链表
 
     class _0019删除链表的倒数第N个节点
     {
-        public class ListNode
-        {
-            public int val;
-            public ListNode next;
-            public ListNode(int x)
-            {
-                val = x;
-                next = null;
-            }
-        }
-
         public ListNode RemoveNthFromEnd(ListNode head, int n)
         {
             //p1先走n步

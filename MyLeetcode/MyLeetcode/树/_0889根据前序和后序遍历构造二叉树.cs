@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0889根据前序和后序遍历构造二叉树
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         /// <summary>
         /// 存储前序遍历数组的元素值与对应下标

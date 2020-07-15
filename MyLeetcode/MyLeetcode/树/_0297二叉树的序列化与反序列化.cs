@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0297二叉树的序列化与反序列化
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         //Encodes a tree to a single string.
         public string serialize(TreeNode root)

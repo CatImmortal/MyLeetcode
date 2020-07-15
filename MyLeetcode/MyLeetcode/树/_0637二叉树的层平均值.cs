@@ -10,14 +10,6 @@ namespace MyLeetcode.树
 
     class _0637二叉树的层平均值
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
 
         public IList<double> AverageOfLevels(TreeNode root)
         {

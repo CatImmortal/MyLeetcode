@@ -10,15 +10,6 @@ namespace MyLeetcode.树
 
     class _0671二叉树中第二小的节点
     {
-        //Definition for a binary tree node.
-        public class TreeNode
-        {
-            public int val;
-            public TreeNode left;
-            public TreeNode right;
-            public TreeNode(int x) { val = x; }
-        }
-
         
         private int min2 = - 1;
         public int FindSecondMinimumValue(TreeNode root)
