@@ -67,32 +67,56 @@ namespace MyLeetcode
         }
 
 
-       
+
 
 
     }
 
-
-    public class BSTIterator
+    public class FindElements
     {
 
-        public BSTIterator(TreeNode root)
-        {
+        private TreeNode root;
 
+        public FindElements(TreeNode root)
+        {
+            PreOrder(root, 0);
+
+            this.root = root;   
         }
 
-        /** @return the next smallest number */
-        public int Next()
+        private void PreOrder(TreeNode root,int rootVal)
         {
+            if (root == null)
+            {
+                return;
+            }
 
+            root.val = rootVal;
+            PreOrder(root.left, rootVal * 2 + 1);
+            PreOrder(root.right, rootVal * 2 + 2);
         }
 
-        /** @return whether we have a next smallest number */
-        public bool HasNext()
+        public bool Find(int target)
         {
+            return Find(root, target);
+        }
 
+        private bool Find(TreeNode root,int target)
+        {
+            if (root == null || root.val > target)
+            {
+                return false;
+            }
+
+            if (root.val == target)
+            {
+                return true;
+            }
+
+            return Find(root.left, target) || Find(root.right, target);
         }
     }
+
 }
 
 
