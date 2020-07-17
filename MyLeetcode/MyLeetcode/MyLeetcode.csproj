@@ -49,6 +49,7 @@
     <Compile Include="字符串\_0014最长公共前缀.cs" />
     <Compile Include="字符串\_0067二进制求和.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
+    <Compile Include="数组\_0035搜索插入位置.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
     <Compile Include="树\_0100相同的树.cs" />
     <Compile Include="树\_0101对称二叉树.cs" />
@@ -62,12 +63,15 @@
     <Compile Include="树\_0111二叉树的最小深度.cs" />
     <Compile Include="树\_0112路径总和.cs" />
     <Compile Include="树\_0113路径总和2.cs" />
+    <Compile Include="树\_0114二叉树展开为链表.cs" />
     <Compile Include="树\_0116填充每个节点的下一个右侧节点指针.cs" />
     <Compile Include="树\_0117填充每个节点的下一个右侧节点指针2.cs" />
     <Compile Include="树\_0144二叉树的前序遍历.cs" />
     <Compile Include="树\_0145二叉树的后序遍历.cs" />
     <Compile Include="树\_0173二叉搜索树迭代器.cs" />
+    <Compile Include="树\_0222完全二叉树的节点个数.cs" />
     <Compile Include="树\_0226翻转二叉树.cs" />
+    <Compile Include="树\_0230二叉搜索树中第K小的元素.cs" />
     <Compile Include="树\_0235二叉搜索树的最近公共祖先.cs" />
     <Compile Include="树\_0236二叉树的最近公共祖先.cs" />
     <Compile Include="树\_0257二叉树的所有路径.cs" />
@@ -75,6 +79,7 @@
     <Compile Include="树\_0404左叶子之和.cs" />
     <Compile Include="树\_0437路径总和3.cs" />
     <Compile Include="树\_0501二叉搜索树中的众数.cs" />
+    <Compile Include="树\_0513找树左下角的值.cs" />
     <Compile Include="树\_0530二叉搜索树的最小绝对差.cs" />
     <Compile Include="树\_0538把二叉搜索树转换为累加树.cs" />
     <Compile Include="树\_0543二叉树的直径.cs" />
@@ -107,7 +112,9 @@
     <Compile Include="树\_1302层数最深叶子节点的和.cs" />
     <Compile Include="树\_1305两棵二叉搜索树中的所有元素.cs" />
     <Compile Include="树\_1315祖父节点值为偶数的节点和.cs" />
+    <Compile Include="树\_1325删除给定值的叶子节点.cs" />
     <Compile Include="树\_1379找出克隆二叉树中的相同节点.cs" />
+    <Compile Include="树\_1448统计二叉树中好节点的数目.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />

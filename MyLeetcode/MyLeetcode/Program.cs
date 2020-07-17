@@ -49,73 +49,56 @@ namespace MyLeetcode
         {
             Program p = new Program();
 
-            TreeNode n1 = new TreeNode(2);
+            TreeNode n1 = new TreeNode(3);
             TreeNode n2 = new TreeNode(1);
             TreeNode n3 = new TreeNode(4);
 
-            TreeNode n4 = new TreeNode(1);
-            TreeNode n5 = new TreeNode(0);
-            TreeNode n6 = new TreeNode(3);
+            TreeNode n4 = new TreeNode(2);
+            //TreeNode n5 = new TreeNode(0);
+            //TreeNode n6 = new TreeNode(3);
 
             n1.left = n2;
             n1.right = n3;
 
-            n4.left = n5;
-            n4.right = n6;
+            n2.right = n4;
 
-            Console.WriteLine(666);
+
         }
 
+        private List<TreeNode> nodes = new List<TreeNode>();
 
-
-
-
-    }
-
-    public class FindElements
-    {
-
-        private TreeNode root;
-
-        public FindElements(TreeNode root)
+        public void Flatten(TreeNode root)
         {
-            PreOrder(root, 0);
+            //将前序遍历结果收集到nodes
+            //同时断开节点间的连接
+            PreOrder(root);
 
-            this.root = root;   
+            //展开为单链表
+            for (int i = 0; i < nodes.Count - 1; i++)
+            {
+                nodes[i].right = nodes[i + 1];
+            }
         }
 
-        private void PreOrder(TreeNode root,int rootVal)
+        private void PreOrder(TreeNode root)
         {
             if (root == null)
             {
                 return;
             }
 
-            root.val = rootVal;
-            PreOrder(root.left, rootVal * 2 + 1);
-            PreOrder(root.right, rootVal * 2 + 2);
+            nodes.Add(root);
+
+            PreOrder(root.left);
+            PreOrder(root.right);
+
+            root.left = null;
+            root.right = null;
         }
 
-        public bool Find(int target)
-        {
-            return Find(root, target);
-        }
 
-        private bool Find(TreeNode root,int target)
-        {
-            if (root == null || root.val > target)
-            {
-                return false;
-            }
-
-            if (root.val == target)
-            {
-                return true;
-            }
-
-            return Find(root.left, target) || Find(root.right, target);
-        }
     }
+
 
 }
 
