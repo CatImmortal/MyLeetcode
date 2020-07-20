@@ -19,7 +19,7 @@ namespace MyLeetcode.树
             }
 
             // LowestCommonAncestor的返回值如果不为null（p和q都不存在root下）
-            //那么返回值是p和q其中至少一个的公共祖先
+            //那么返回值是p和q其中至少一个的公共祖先（或者是其本身）
 
             TreeNode leftNode = LowestCommonAncestor(root.left, p, q);
             TreeNode rightNode = LowestCommonAncestor(root.right, p, q);

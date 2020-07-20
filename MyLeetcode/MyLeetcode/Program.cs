@@ -65,35 +65,9 @@ namespace MyLeetcode
 
         }
 
-        private List<TreeNode> nodes = new List<TreeNode>();
-
-        public void Flatten(TreeNode root)
+        public TreeNode LcaDeepestLeaves(TreeNode root)
         {
-            //将前序遍历结果收集到nodes
-            //同时断开节点间的连接
-            PreOrder(root);
 
-            //展开为单链表
-            for (int i = 0; i < nodes.Count - 1; i++)
-            {
-                nodes[i].right = nodes[i + 1];
-            }
-        }
-
-        private void PreOrder(TreeNode root)
-        {
-            if (root == null)
-            {
-                return;
-            }
-
-            nodes.Add(root);
-
-            PreOrder(root.left);
-            PreOrder(root.right);
-
-            root.left = null;
-            root.right = null;
         }
 
 
