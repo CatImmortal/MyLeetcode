@@ -71,6 +71,7 @@
     <Compile Include="树\_0144二叉树的前序遍历.cs" />
     <Compile Include="树\_0145二叉树的后序遍历.cs" />
     <Compile Include="树\_0173二叉搜索树迭代器.cs" />
+    <Compile Include="树\_0199二叉树的右视图.cs" />
     <Compile Include="树\_0222完全二叉树的节点个数.cs" />
     <Compile Include="树\_0226翻转二叉树.cs" />
     <Compile Include="树\_0230二叉搜索树中第K小的元素.cs" />
@@ -107,11 +108,13 @@
     <Compile Include="树\_0894所有可能的满二叉树.cs" />
     <Compile Include="树\_0897递增顺序查找树.cs" />
     <Compile Include="树\_0938二叉搜索树的范围和.cs" />
+    <Compile Include="树\_0951翻转等价二叉树.cs" />
     <Compile Include="树\_0965单值二叉树.cs" />
     <Compile Include="树\_0979在二叉树中分配硬币.cs" />
     <Compile Include="树\_0993二叉树的堂兄弟节点.cs" />
     <Compile Include="树\_1008先序遍历构造二叉树.cs" />
     <Compile Include="树\_1022从根到叶的二进制数之和.cs" />
+    <Compile Include="树\_1026节点与其祖先之间的最大差值.cs" />
     <Compile Include="树\_1123最深叶节点的最近公共祖先.cs" />
     <Compile Include="树\_1261在受污染的二叉树中查找元素.cs" />
     <Compile Include="树\_1302层数最深叶子节点的和.cs" />
@@ -121,6 +124,7 @@
     <Compile Include="树\_1379找出克隆二叉树中的相同节点.cs" />
     <Compile Include="树\_1448统计二叉树中好节点的数目.cs" />
     <Compile Include="树\_0429N叉树的层序遍历.cs" />
+    <Compile Include="树\_1457二叉树中的伪回文路径.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />

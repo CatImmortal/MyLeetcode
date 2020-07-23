@@ -4,67 +4,12 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode
+namespace MyLeetcode.树
 {
-    //Definition for singly-linked list.
-    public class ListNode
+    //https://leetcode-cn.com/problems/flip-equivalent-binary-trees/
+
+    class _0951翻转等价二叉树
     {
-        public int val;
-        public ListNode next;
-        public ListNode(int x) { val = x; }
-    }
-
-    // Definition for a Node.
-    public class Node
-    {
-        public int val;
-        public IList<Node> children;
-
-        public Node() { }
-
-        public Node(int _val)
-        {
-            val = _val;
-        }
-
-        public Node(int _val, IList<Node> _children)
-        {
-            val = _val;
-            children = _children;
-        }
-    }
-
-    //Definition for a binary tree node.
-    public class TreeNode
-    {
-        public int val;
-        public TreeNode left;
-        public TreeNode right;
-        public TreeNode(int x) { val = x; }
-    }
-
-    class Program
-    {
-        static void Main(string[] args)
-        {
-            Program p = new Program();
-
-            TreeNode n1 = new TreeNode(3);
-            TreeNode n2 = new TreeNode(1);
-            TreeNode n3 = new TreeNode(4);
-
-            TreeNode n4 = new TreeNode(2);
-            //TreeNode n5 = new TreeNode(0);
-            //TreeNode n6 = new TreeNode(3);
-
-            n1.left = n2;
-            n1.right = n3;
-
-            n2.right = n4;
-
-
-        }
-
         public bool FlipEquiv(TreeNode root1, TreeNode root2)
         {
             if (root1 == null && root2 == null)
@@ -74,7 +19,7 @@ namespace MyLeetcode
 
             if (root1 == null || root2 == null)
             {
-                return false;   
+                return false;
             }
 
             Stack<TreeNode> stack1 = new Stack<TreeNode>();
@@ -92,7 +37,7 @@ namespace MyLeetcode
                     return false;
                 }
 
-                if (IsEquals(node1.left,node2.left) && IsEquals(node1.right,node2.right))
+                if (IsEquals(node1.left, node2.left) && IsEquals(node1.right, node2.right))
                 {
                     //子节点相同
                     if (node1.left != null)
@@ -139,15 +84,15 @@ namespace MyLeetcode
         /// <summary>
         /// 判断两个节点是否相同
         /// </summary>
-        private bool IsEquals(TreeNode root1,TreeNode root2)
+        private bool IsEquals(TreeNode root1, TreeNode root2)
         {
-           
+
             if (root1 == null && root2 == null)
             {
                 return true;
             }
 
-            if (root1 ==null || root2 == null)
+            if (root1 == null || root2 == null)
             {
                 return false;
             }
@@ -155,16 +100,21 @@ namespace MyLeetcode
             return root1.val == root2.val;
         }
 
+        public bool FlipEquiv2(TreeNode root1, TreeNode root2)
+        {
+            if (root1 == root2)
+            {
+                return true;
+            }
 
+            if (root1 == null || root2 == null || root1.val != root2.val)
+            {
+                return false;
+            }
+
+            //返回左右子树是否 相等或镜像
+            return (FlipEquiv2(root1.left, root2.left) && FlipEquiv2(root1.right, root2.right)) 
+                    || (FlipEquiv2(root1.left, root2.right) && FlipEquiv2(root1.right, root2.left));
+        }
     }
-
-
 }
-
-
-
-
-
-
-
-

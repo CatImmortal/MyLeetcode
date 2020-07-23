@@ -59,12 +59,14 @@ namespace MyLeetcode.树
                         pre = pre.right;
                     }
 
-                    // 将左子树插入到右子树的地方
+                    //将右子树插入到左子树最右节点
                     pre.right = root.right;
 
-                    // 考虑下一个节点
+                    //将左子树移到右子树处
                     root.right = root.left;
                     root.left = null;
+
+                    // 考虑下一个节点
                     root = root.right;
                 }
             }
