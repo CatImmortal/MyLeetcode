@@ -84,6 +84,7 @@
     <Compile Include="树\_0501二叉搜索树中的众数.cs" />
     <Compile Include="树\_0508出现次数最多的子树元素和.cs" />
     <Compile Include="树\_0513找树左下角的值.cs" />
+    <Compile Include="树\_0515在每个树行中找最大值.cs" />
     <Compile Include="树\_0530二叉搜索树的最小绝对差.cs" />
     <Compile Include="树\_0538把二叉搜索树转换为累加树.cs" />
     <Compile Include="树\_0543二叉树的直径.cs" />
@@ -107,6 +108,7 @@
     <Compile Include="树\_0889根据前序和后序遍历构造二叉树.cs" />
     <Compile Include="树\_0894所有可能的满二叉树.cs" />
     <Compile Include="树\_0897递增顺序查找树.cs" />
+    <Compile Include="树\_0919完全二叉树插入器.cs" />
     <Compile Include="树\_0938二叉搜索树的范围和.cs" />
     <Compile Include="树\_0951翻转等价二叉树.cs" />
     <Compile Include="树\_0965单值二叉树.cs" />
