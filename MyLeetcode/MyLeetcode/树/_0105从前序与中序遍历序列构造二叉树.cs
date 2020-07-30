@@ -36,7 +36,7 @@ namespace MyLeetcode.树
             }
 
             //前序遍历结果的开头 是子树根节点
-            TreeNode node = new TreeNode(preorder[preL]);
+            TreeNode root = new TreeNode(preorder[preL]);
 
 
             int rootIn = dict[preorder[preL]];  //根节点在中序遍历数组的位置
@@ -55,11 +55,11 @@ namespace MyLeetcode.树
             int rightPreL = leftPreR + 1;
             int rightPreR = preR;
 
-            node.left = BuildTree(preorder, inorder, leftPreL,leftPreR,leftInL,leftInR);
-            node.right = BuildTree(preorder, inorder, rightPreL,rightPreR,rightInL,rightInR);
+            root.left = BuildTree(preorder, inorder, leftPreL,leftPreR,leftInL,leftInR);
+            root.right = BuildTree(preorder, inorder, rightPreL,rightPreR,rightInL,rightInR);
 
 
-            return node;
+            return root;
         }
 
     }

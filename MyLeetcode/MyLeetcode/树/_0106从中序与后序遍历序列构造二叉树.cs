@@ -36,7 +36,7 @@ namespace MyLeetcode.树
             }
 
             //后序遍历数组的末尾 是子树根节点
-            TreeNode node = new TreeNode(postorder[postR]);
+            TreeNode root = new TreeNode(postorder[postR]);
 
             int rootIn = dict[postorder[postR]];  //根节点在中序遍历数组的位置
 
@@ -55,10 +55,10 @@ namespace MyLeetcode.树
             int rightPostL = leftPostR + 1;
             int rightPostR = postR - 1;
 
-            node.left = BuildTree(inorder, postorder,leftInL,leftInR,leftPostL,leftPostR);
-            node.right = BuildTree(inorder, postorder, rightInL,rightInR,rightPostL,rightPostR);
+            root.left = BuildTree(inorder, postorder,leftInL,leftInR,leftPostL,leftPostR);
+            root.right = BuildTree(inorder, postorder, rightInL,rightInR,rightPostL,rightPostR);
             
-            return node;
+            return root;
         }
     }
 }

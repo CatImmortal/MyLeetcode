@@ -43,12 +43,12 @@ namespace MyLeetcode.树
                 return null;
             }
 
-            //前序遍历左边界 就是当前子树的头节点
-            TreeNode node = new TreeNode(pre[preL]);
+            //前序遍历结果左边界 就是当前子树的头节点
+            TreeNode root = new TreeNode(pre[preL]);
 
             if (preL == preR || postL == postR)
             {
-                return node;
+                return root;
             }
 
             int leftPreL = preL + 1;
@@ -65,10 +65,10 @@ namespace MyLeetcode.树
             int rightPostR = postR - 1;
 
 
-            node.left = ConstructFromPrePost(pre, post, leftPreL, leftPreR, leftPostL, leftPostR);
-            node.right = ConstructFromPrePost(pre, post, rightPreL, rightPreR, rightPostL, rightPostR);
+            root.left = ConstructFromPrePost(pre, post, leftPreL, leftPreR, leftPostL, leftPostR);
+            root.right = ConstructFromPrePost(pre, post, rightPreL, rightPreR, rightPostL, rightPostR);
 
-            return node;
+            return root;
         }
     }
 }
