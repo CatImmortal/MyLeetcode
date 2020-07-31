@@ -22,6 +22,7 @@
     <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -31,6 +32,7 @@
     <DefineConstants>TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
+    <LangVersion>7.3</LangVersion>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -55,6 +57,7 @@
     <Compile Include="树\_0100相同的树.cs" />
     <Compile Include="树\_0101对称二叉树.cs" />
     <Compile Include="树\_0102二叉树的层序遍历.cs" />
+    <Compile Include="树\_0103二叉树的锯齿形层次遍历.cs" />
     <Compile Include="树\_0104二叉树的最大深度.cs" />
     <Compile Include="树\_0105从前序与中序遍历序列构造二叉树.cs" />
     <Compile Include="树\_0106从中序与后序遍历序列构造二叉树.cs" />
@@ -96,8 +99,10 @@
     <Compile Include="树\_0606根据二叉树创建字符串.cs" />
     <Compile Include="树\_0617合并二叉树.cs" />
     <Compile Include="树\_0637二叉树的层平均值.cs" />
+    <Compile Include="树\_0652寻找重复的子树.cs" />
     <Compile Include="树\_0653两数之和4-输入BST.cs" />
     <Compile Include="树\_0654最大二叉树.cs" />
+    <Compile Include="树\_0655输出二叉树.cs" />
     <Compile Include="树\_0669修剪二叉搜索树.cs" />
     <Compile Include="树\_0671二叉树中第二小的节点.cs" />
     <Compile Include="树\_0687最长同值路径.cs" />
