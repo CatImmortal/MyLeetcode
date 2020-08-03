@@ -109,6 +109,7 @@
     <Compile Include="树\_0700二叉搜索树中的搜索.cs" />
     <Compile Include="树\_0701二叉搜索树中的插入操作.cs" />
     <Compile Include="树\_0814二叉树剪枝.cs" />
+    <Compile Include="树\_0865具有所有最深结点的最小子树.cs" />
     <Compile Include="树\_0872叶子相似的树.cs" />
     <Compile Include="树\_0889根据前序和后序遍历构造二叉树.cs" />
     <Compile Include="树\_0894所有可能的满二叉树.cs" />
