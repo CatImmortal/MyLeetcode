@@ -111,5 +111,43 @@ namespace MyLeetcode.树
 
             return null;
         }
+
+
+        public TreeNode SubtreeWithAllDeepest2(TreeNode root)
+        {
+            if (root == null)
+            {
+                return null;
+            }
+
+            int leftDepth = GetDepth(root.left);
+            int rightDepth = GetDepth(root.right);
+
+            //左右子树高度相等 返回root
+            if (leftDepth == rightDepth)
+            {
+                return root;
+            }
+
+            //否则递归到深度更大的那边找
+            if (leftDepth > rightDepth)
+            {
+                return SubtreeWithAllDeepest2(root.left);
+            }
+            else
+            {
+                return SubtreeWithAllDeepest2(root.right);
+            }
+        }
+
+        private int GetDepth(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            return 1 + Math.Max(GetDepth(root.left), GetDepth(root.right));
+        }
     }
 }

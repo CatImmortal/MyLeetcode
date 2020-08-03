@@ -84,6 +84,7 @@
     <Compile Include="树\_0297二叉树的序列化与反序列化.cs" />
     <Compile Include="树\_0404左叶子之和.cs" />
     <Compile Include="树\_0437路径总和3.cs" />
+    <Compile Include="树\_0449序列化和反序列化二叉搜索树.cs" />
     <Compile Include="树\_0501二叉搜索树中的众数.cs" />
     <Compile Include="树\_0508出现次数最多的子树元素和.cs" />
     <Compile Include="树\_0513找树左下角的值.cs" />
@@ -98,6 +99,7 @@
     <Compile Include="树\_0590N叉树的后序遍历.cs" />
     <Compile Include="树\_0606根据二叉树创建字符串.cs" />
     <Compile Include="树\_0617合并二叉树.cs" />
+    <Compile Include="树\_0623在二叉树中增加一行.cs" />
     <Compile Include="树\_0637二叉树的层平均值.cs" />
     <Compile Include="树\_0652寻找重复的子树.cs" />
     <Compile Include="树\_0653两数之和4-输入BST.cs" />
