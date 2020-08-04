@@ -111,6 +111,7 @@
     <Compile Include="树\_0700二叉搜索树中的搜索.cs" />
     <Compile Include="树\_0701二叉搜索树中的插入操作.cs" />
     <Compile Include="树\_0814二叉树剪枝.cs" />
+    <Compile Include="树\_0863二叉树中所有距离为 K 的结点.cs" />
     <Compile Include="树\_0865具有所有最深结点的最小子树.cs" />
     <Compile Include="树\_0872叶子相似的树.cs" />
     <Compile Include="树\_0889根据前序和后序遍历构造二叉树.cs" />
@@ -137,6 +138,7 @@
     <Compile Include="树\_1448统计二叉树中好节点的数目.cs" />
     <Compile Include="树\_0429N叉树的层序遍历.cs" />
     <Compile Include="树\_1457二叉树中的伪回文路径.cs" />
+    <Compile Include="树\_1530好叶子节点对的数量.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />
