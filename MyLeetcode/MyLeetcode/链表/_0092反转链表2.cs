@@ -65,5 +65,45 @@ namespace MyLeetcode.链表
 
             return newHead;  //从第一个节点开始翻转的话，要返回翻转后的新头节点
         }
+
+        //------------------------------------
+
+        /// <summary>
+        /// 后继节点
+        /// </summary>
+        private ListNode successor = null;
+
+        public ListNode ReverseBetween2(ListNode head, int m, int n)
+        {
+            if (m == 1)
+            {
+                return ReverseN(head, n);
+            }
+
+            //对于head.next来说 要翻转的部分就是m-1到n-1
+            //比如原来翻转2到5区间
+            //对于head.next就是翻转1到4区间
+            head.next = ReverseBetween2(head.next, m - 1, n - 1);
+
+            return head;
+        }
+
+        private ListNode ReverseN(ListNode head,int n)
+        {
+            //翻转链表前N个节点
+
+            if (n == 1)
+            {
+                //记录翻转后的尾节点需要指向的next节点
+                successor = head.next;
+                return head;
+            }
+
+            ListNode last = ReverseN(head.next, n - 1);
+            head.next.next = head;
+            head.next = successor;
+
+            return last;
+        }
     }
 }

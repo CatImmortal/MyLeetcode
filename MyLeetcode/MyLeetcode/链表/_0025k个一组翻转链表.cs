@@ -75,5 +75,54 @@ namespace MyLeetcode.链表
             return prev;
 
         }
+
+        public ListNode ReverseKGroup2(ListNode head, int k)
+        {
+            if (head == null)
+            {
+                return null;
+            }
+
+            ListNode a = head;
+            ListNode b = head;
+
+            for (int i = 0; i < k; i++)
+            {
+                if (b == null)
+                {
+                    //链表长度不足K个 直接返回
+                    return head;
+                }
+
+                b = b.next;
+            }
+
+            //翻转前K个元素
+            ListNode newHead = ReverseList2(a, b);
+            ListNode newTail = head;
+
+            newTail.next = ReverseKGroup2(b, k);
+            return newHead;
+        }
+
+        
+        private ListNode ReverseList2(ListNode head,ListNode tail)
+        {
+            
+            //翻转head到tail.prev的元素
+            ListNode cur = head;
+            ListNode next = head;
+            ListNode prev = null;
+
+            while (cur != tail)
+            {
+                ListNode tempNext = cur.next;
+                cur.next = prev;
+                prev = cur;
+                cur = tempNext;
+            }
+
+            return prev;
+        }
     }
 }

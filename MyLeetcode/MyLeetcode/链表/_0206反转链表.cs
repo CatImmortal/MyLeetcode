@@ -39,21 +39,20 @@ namespace MyLeetcode.链表
 
         public ListNode ReverseList2(ListNode head)
         {
-            if (head == null || head.next == null)
+            if (head.next == null)
             {
-                return head;
+                return head;    
             }
 
-            ListNode node = ReverseList2(head.next);
+            ListNode last = ReverseList2(head.next);
 
-            //让next节点的next指向自己 这里不能是node.next，因为此时node表示新的头节点
+            //让翻转后新链表的尾节点的.next指向自己
             head.next.next = head;
 
-            //将自己的next置空，这样会让原本头节点的next为null
+            //把自己的next置空
             head.next = null;
 
-            //最后返回新的头节点
-            return node;
+            return last;
 
         }
 
