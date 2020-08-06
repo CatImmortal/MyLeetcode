@@ -122,6 +122,7 @@
     <Compile Include="树\_0951翻转等价二叉树.cs" />
     <Compile Include="树\_0965单值二叉树.cs" />
     <Compile Include="树\_0979在二叉树中分配硬币.cs" />
+    <Compile Include="树\_0988从叶结点开始的最小字符串.cs" />
     <Compile Include="树\_0993二叉树的堂兄弟节点.cs" />
     <Compile Include="树\_0998最大二叉树2.cs" />
     <Compile Include="树\_1008先序遍历构造二叉树.cs" />
@@ -134,6 +135,7 @@
     <Compile Include="树\_1305两棵二叉搜索树中的所有元素.cs" />
     <Compile Include="树\_1315祖父节点值为偶数的节点和.cs" />
     <Compile Include="树\_1325删除给定值的叶子节点.cs" />
+    <Compile Include="树\_1372二叉树中的最长交错路径.cs" />
     <Compile Include="树\_1379找出克隆二叉树中的相同节点.cs" />
     <Compile Include="树\_1448统计二叉树中好节点的数目.cs" />
     <Compile Include="树\_0429N叉树的层序遍历.cs" />
@@ -168,6 +170,7 @@
     <Compile Include="链表\_0725分隔链表.cs" />
     <Compile Include="链表\_0817链表组件.cs" />
     <Compile Include="链表\_0876链表的中间结点.cs" />
+    <Compile Include="树\_0958二叉树的完全性检验.cs" />
     <Compile Include="链表\_1019链表中的下一个更大节点.cs" />
     <Compile Include="链表\_1171从链表中删去总和值为零的连续节点.cs" />
     <Compile Include="链表\_1290二进制链表转整数.cs" />

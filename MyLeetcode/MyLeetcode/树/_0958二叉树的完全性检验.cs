@@ -12,41 +12,38 @@ namespace MyLeetcode.树
     {
         public bool IsCompleteTree(TreeNode root)
         {
-            Stack<TreeNode> stack = new Stack<TreeNode>();
+  
+            Queue<TreeNode> queue = new Queue<TreeNode>();
 
-            if (root != null)
+            //前一个层次遍历到的节点
+            TreeNode prev = root;
+
+            queue.Enqueue(root);
+
+            while (queue.Count > 0)
             {
-                stack.Push(root);
-            }
+                TreeNode node = queue.Dequeue();
 
-
-            while (stack.Count != 0)
-            {
-                TreeNode node = stack.Pop();
-
-                if (node.left == null && node.right != null)
+                if (prev == null && node != null)
                 {
-                    //有右子节点但没有左子节点 返回false
+                    //前一个为null 当前节点不为null 说明不连续
+                    //返回false
                     return false;
                 }
 
-                //pop root后先push right，再push left，以实现前序遍历
-
-                if (node.right != null)
+                if (node != null)
                 {
-                    stack.Push(node.right);
+                    queue.Enqueue(node.left);
+                    queue.Enqueue(node.right);
                 }
 
-                if (node.left != null)
-                {
-                    stack.Push(node.left);
-                }
-
+                prev = node;
+               
             }
 
+
             return true;
-
-
         }
+
     }
 }
