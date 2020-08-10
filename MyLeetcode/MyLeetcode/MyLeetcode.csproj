@@ -121,6 +121,7 @@
     <Compile Include="树\_0938二叉搜索树的范围和.cs" />
     <Compile Include="树\_0951翻转等价二叉树.cs" />
     <Compile Include="树\_0965单值二叉树.cs" />
+    <Compile Include="树\_0971翻转二叉树以匹配先序遍历.cs" />
     <Compile Include="树\_0979在二叉树中分配硬币.cs" />
     <Compile Include="树\_0988从叶结点开始的最小字符串.cs" />
     <Compile Include="树\_0993二叉树的堂兄弟节点.cs" />

@@ -99,11 +99,11 @@ namespace MyLeetcode.链表
                 return head;
             }
 
-            ListNode last = ReverseN(head.next, n - 1);
+            ListNode newHead = ReverseN(head.next, n - 1);
             head.next.next = head;
             head.next = successor;
 
-            return last;
+            return newHead;
         }
     }
 }

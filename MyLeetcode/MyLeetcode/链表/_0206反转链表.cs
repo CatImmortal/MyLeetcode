@@ -44,7 +44,7 @@ namespace MyLeetcode.链表
                 return head;    
             }
 
-            ListNode last = ReverseList2(head.next);
+            ListNode newHead = ReverseList2(head.next);
 
             //让翻转后新链表的尾节点的.next指向自己
             head.next.next = head;
@@ -52,7 +52,7 @@ namespace MyLeetcode.链表
             //把自己的next置空
             head.next = null;
 
-            return last;
+            return newHead;
 
         }
 
