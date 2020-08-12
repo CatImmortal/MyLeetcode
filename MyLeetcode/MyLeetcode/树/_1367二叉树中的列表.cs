@@ -12,45 +12,23 @@ namespace MyLeetcode.树
     {
         public bool IsSubPath(ListNode head, TreeNode root)
         {
-            Stack<TreeNode> stack = new Stack<TreeNode>();
-            stack.Push(root);
-
-            while (stack.Count > 0)
+            if (root == null)
             {
-                TreeNode node = stack.Pop();
-
-                if (CheckList(head,node))
-                {
-                    return true;
-                }
-
-                if (node.right != null)
-                {
-                    stack.Push(node.right);
-                }
-
-                if (node.left != null)
-                {
-                    stack.Push(node.left);
-                }
-                
+                return false;
             }
 
-            return false;
-            
+            return PreOrder(root, head) || IsSubPath(head, root.left) || IsSubPath(head, root.right);
+
         }
 
-        /// <summary>
-        /// 检查root为根的子树中是否存在一条与head相同的路径
-        /// </summary>
-        private bool CheckList(ListNode head,TreeNode root)
+        private bool PreOrder(TreeNode root, ListNode head)
         {
-            if (root == null && head == null)
+            if (head == null)
             {
                 return true;
             }
 
-            if (root == null || head == null)
+            if (root == null)
             {
                 return false;
             }
@@ -60,8 +38,8 @@ namespace MyLeetcode.树
                 return false;
             }
 
-            return CheckList(head.next, root.left) || CheckList(head.next, root.right);
-            
+            return PreOrder(root.left, head.next) || PreOrder(root.right, head.next);
         }
     }
+
 }

@@ -18,14 +18,10 @@ namespace MyLeetcode.树
                 return false;
             }
 
-            //检查s是否和t相同
-            if (IsSameTree(s, t))
-            {
-                return true;
-            }
 
-            //递归到s的左子树和右子树
-            return IsSubtree(s.left, t) || IsSubtree(s.right, t);
+            //检查s是否和t相同
+            //或者s的左子树或右子树中是否有和t相同的子树
+            return IsSameTree(s, t) || IsSubtree(s.left, t) || IsSubtree(s.right, t);
         }
 
         private bool IsSameTree(TreeNode p, TreeNode q)

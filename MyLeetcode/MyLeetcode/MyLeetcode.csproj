@@ -54,6 +54,7 @@
     <Compile Include="数组\_0035搜索插入位置.cs" />
     <Compile Include="数组\_0167两数之和2-输入有序数组.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
+    <Compile Include="树\_0098验证二叉搜索树.cs" />
     <Compile Include="树\_0100相同的树.cs" />
     <Compile Include="树\_0101对称二叉树.cs" />
     <Compile Include="树\_0102二叉树的层序遍历.cs" />
@@ -105,6 +106,7 @@
     <Compile Include="树\_0653两数之和4-输入BST.cs" />
     <Compile Include="树\_0654最大二叉树.cs" />
     <Compile Include="树\_0655输出二叉树.cs" />
+    <Compile Include="树\_0662二叉树最大宽度.cs" />
     <Compile Include="树\_0669修剪二叉搜索树.cs" />
     <Compile Include="树\_0671二叉树中第二小的节点.cs" />
     <Compile Include="树\_0687最长同值路径.cs" />
@@ -130,6 +132,7 @@
     <Compile Include="树\_1008先序遍历构造二叉树.cs" />
     <Compile Include="树\_1022从根到叶的二进制数之和.cs" />
     <Compile Include="树\_1026节点与其祖先之间的最大差值.cs" />
+    <Compile Include="树\_1028从先序遍历还原二叉树.cs" />
     <Compile Include="树\_1110删点成林.cs" />
     <Compile Include="树\_1123最深叶节点的最近公共祖先.cs" />
     <Compile Include="树\_1145二叉树着色游戏.cs" />
@@ -138,6 +141,7 @@
     <Compile Include="树\_1305两棵二叉搜索树中的所有元素.cs" />
     <Compile Include="树\_1315祖父节点值为偶数的节点和.cs" />
     <Compile Include="树\_1325删除给定值的叶子节点.cs" />
+    <Compile Include="树\_1339分裂二叉树的最大乘积.cs" />
     <Compile Include="树\_1367二叉树中的列表.cs" />
     <Compile Include="树\_1372二叉树中的最长交错路径.cs" />
     <Compile Include="树\_1379找出克隆二叉树中的相同节点.cs" />
