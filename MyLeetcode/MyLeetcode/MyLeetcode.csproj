@@ -55,6 +55,7 @@
     <Compile Include="数组\_0167两数之和2-输入有序数组.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
     <Compile Include="树\_0098验证二叉搜索树.cs" />
+    <Compile Include="树\_0099恢复二叉搜索树.cs" />
     <Compile Include="树\_0100相同的树.cs" />
     <Compile Include="树\_0101对称二叉树.cs" />
     <Compile Include="树\_0102二叉树的层序遍历.cs" />
