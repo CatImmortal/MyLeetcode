@@ -26,6 +26,7 @@ namespace MyLeetcode.数组
                     break;
                 }
 
+                //根据大小关系移动双指针
                 if (sum < target)
                 {
                     i++;

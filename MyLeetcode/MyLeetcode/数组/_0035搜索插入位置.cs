@@ -39,6 +39,7 @@ namespace MyLeetcode.数组
                 }
             }
 
+            //没找到目标值 计算其插入位置
             if (nums[middle] > target)
             {
                 return middle;
