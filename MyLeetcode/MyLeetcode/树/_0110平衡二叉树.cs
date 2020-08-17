@@ -48,5 +48,46 @@ namespace MyLeetcode.树
 
             return height;
         }
+
+        //------------------------
+
+        public bool IsBalanced2(TreeNode root)
+        {
+            return GetHeight2(root) >= 0;
+        }
+
+        private int GetHeight2(TreeNode root)
+        {
+            if (root == null)
+            {
+                return 0;
+            }
+
+            int leftHeight = GetHeight2(root.left);
+
+            //左子树不平衡
+            if (leftHeight == -1)
+            {
+                return -1;
+            }
+
+            int rightHeight = GetHeight2(root.right);
+
+            //右子树不平衡
+            if (rightHeight == -1)
+            {
+                return -1;
+            }
+
+            //自身不平衡
+            if (Math.Abs(leftHeight - rightHeight) > 1)
+            {
+                return -1;
+            }
+
+            //平衡 返回高度
+            return Math.Max(leftHeight, rightHeight) + 1;
+            
+        }
     }
 }
