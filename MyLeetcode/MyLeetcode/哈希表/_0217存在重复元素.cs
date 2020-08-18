@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace MyLeetcode.数组
+namespace MyLeetcode.哈希表
 {
     //https://leetcode-cn.com/problems/contains-duplicate/
 
