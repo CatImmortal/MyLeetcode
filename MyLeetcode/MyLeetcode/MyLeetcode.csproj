@@ -55,7 +55,11 @@
     <Compile Include="数组\_0035搜索插入位置.cs" />
     <Compile Include="数组\_0121买卖股票的最佳时机.cs" />
     <Compile Include="数组\_0122买卖股票的最佳时机2.cs" />
+    <Compile Include="位运算\_0136只出现一次的数字.cs" />
     <Compile Include="数组\_0167两数之和2-输入有序数组.cs" />
+    <Compile Include="数组\_0189旋转数组.cs" />
+    <Compile Include="数组\_0217存在重复元素.cs" />
+    <Compile Include="数组\_0349两个数组的交集.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
     <Compile Include="树\_0098验证二叉搜索树.cs" />
     <Compile Include="树\_0099恢复二叉搜索树.cs" />
