@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-
+using MyLeetcode.字符串;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -47,15 +47,8 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            Program p = new Program();
-
-            TreeNode n1 = new TreeNode(3);
-            TreeNode n2 = new TreeNode(1);
-            TreeNode n3 = new TreeNode(4);
-
-            TreeNode n4 = new TreeNode(2);
-            //TreeNode n5 = new TreeNode(0);
-            //TreeNode n6 = new TreeNode(3);
+            _0541反转字符串2 obj = new _0541反转字符串2();
+            obj.ReverseStr("abcdefg", 2);
 
 
 

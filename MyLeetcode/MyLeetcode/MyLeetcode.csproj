@@ -48,11 +48,15 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="动态规划\_0070爬楼梯.cs" />
+    <Compile Include="哈希表\_0001两数之和.cs" />
     <Compile Include="字符串\_0014最长公共前缀.cs" />
     <Compile Include="字符串\_0067二进制求和.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
+    <Compile Include="字符串\_0541反转字符串2.cs" />
     <Compile Include="数组\_0026删除排序数组中的重复项.cs" />
     <Compile Include="数组\_0035搜索插入位置.cs" />
+    <Compile Include="哈希表\_0036有效的数独.cs" />
+    <Compile Include="数组\_0048旋转图像.cs" />
     <Compile Include="数组\_0066加一.cs" />
     <Compile Include="数组\_0121买卖股票的最佳时机.cs" />
     <Compile Include="数组\_0122买卖股票的最佳时机2.cs" />
@@ -62,6 +66,7 @@
     <Compile Include="哈希表\_0217存在重复元素.cs" />
     <Compile Include="哈希表\_0349两个数组的交集.cs" />
     <Compile Include="数组\_0283移动零.cs" />
+    <Compile Include="字符串\_0344反转字符串.cs" />
     <Compile Include="树\_0094二叉树的中序遍历.cs" />
     <Compile Include="树\_0098验证二叉搜索树.cs" />
     <Compile Include="树\_0099恢复二叉搜索树.cs" />
