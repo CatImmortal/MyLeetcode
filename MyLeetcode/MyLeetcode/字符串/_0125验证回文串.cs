@@ -16,6 +16,7 @@ namespace MyLeetcode.字符串
             int right = s.Length - 1;
             while (left < right)
             {
+                //分别在左边和右边找到需要对比的字符
                 while (left < right && !char.IsLetterOrDigit(s[left]))
                 {
                     left++;
@@ -27,6 +28,7 @@ namespace MyLeetcode.字符串
 
                 if (left < right)
                 {
+                    //进行对比
                     if (char.ToLower(s[left]) != char.ToLower(s[right]))
                     {
                         return false;

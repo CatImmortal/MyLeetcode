@@ -18,6 +18,7 @@ namespace MyLeetcode.哈希表
                 return Intersect(nums2, nums1);
             }
 
+            //把元素少的数组里的元素出现次数统计进字典
             Dictionary<int, int> dict = new Dictionary<int, int>();
             for (int i = 0; i < nums1.Length; i++)
             {
@@ -33,6 +34,7 @@ namespace MyLeetcode.哈希表
 
             List<int> ans = new List<int>();
 
+            //用元素多的那个数组的元素和字典进行对比
             for (int i = 0; i < nums2.Length; i++)
             {
                 if (dict.ContainsKey(nums2[i]))

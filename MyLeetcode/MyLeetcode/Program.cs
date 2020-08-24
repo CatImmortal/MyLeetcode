@@ -47,9 +47,8 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0541反转字符串2 obj = new _0541反转字符串2();
-            obj.ReverseStr("abcdefg", 2);
-
+            _0008字符串转换整数atoi p = new _0008字符串转换整数atoi();
+            p.MyAtoi("-91283472332");
 
 
 

@@ -49,6 +49,10 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="动态规划\_0070爬楼梯.cs" />
     <Compile Include="哈希表\_0001两数之和.cs" />
+    <Compile Include="哈希表\_0242有效的字母异位词.cs" />
+    <Compile Include="哈希表\_0387字符串中的第一个唯一字符.cs" />
+    <Compile Include="字符串\_0008字符串转换整数 %28atoi%29.cs" />
+    <Compile Include="数学\_0007整数反转.cs" />
     <Compile Include="字符串\_0014最长公共前缀.cs" />
     <Compile Include="字符串\_0067二进制求和.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
