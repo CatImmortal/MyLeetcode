@@ -47,8 +47,8 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0008字符串转换整数atoi p = new _0008字符串转换整数atoi();
-            p.MyAtoi("-91283472332");
+            _0038外观数列 p = new _0038外观数列();
+            p.CountAndSay(10);
 
 
 

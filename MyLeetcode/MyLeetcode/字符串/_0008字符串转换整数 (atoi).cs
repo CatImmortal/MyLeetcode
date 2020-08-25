@@ -12,84 +12,58 @@ namespace MyLeetcode.字符串
     {
         public int MyAtoi(string str)
         {
-            if (string.IsNullOrEmpty(str)|| string.IsNullOrWhiteSpace(str))
+            if (string.IsNullOrEmpty(str))
             {
                 return 0;
             }
 
-            //找到第一个非空字符
-            int helper = 1;
-            int i = 0;
-            for (i = 0; i < str.Length; i++)
-            {
-                char c = str[i];
-                if (c != ' ')
-                {
-                    if (c == '-')
-                    {
-                        //是负数
-                        helper = -1;
+            int len = str.Length;
 
-                        //下标后移一位
-                        i++;
-                    }
-                    else if (c < '0' || c > '9')
-                    {
-                        //不是数字
-                        return 0;
-                    }
-
-
-                    break;
-                }
-            }
-
-            //最后一位是-的情况
-            if (i == str.Length)
-            {
-                return 0;
-            }
-
+            int index = 0;
+            int sign = 1;
             int ans = 0;
 
-            for (; i < str.Length; i++)
+            //1.移除空格
+            while (index < len && str[index] == ' ')
             {
-                char c = str[i];
-                if (c < '0' || c > '9')
+                index++;
+            }
+
+            if (index == len)
+            {
+                //全是空格的情况
+                return 0;
+            }
+
+            //2.处理正负符号
+            if (str[index] == '+' || str[index] == '-')
+            {
+                sign = str[index] == '+' ? 1 : -1;
+                index++;
+            }
+
+            //3.转换数字 避免溢出
+            while (index < len)
+            {
+                int digit = str[index] - '0';
+                if (digit < 0 || digit > 9)
                 {
-                    //忽略掉有效整数部分后续的多余字符
+                    //不是数字的情况 直接打断循环
                     break;
                 }
 
-                if (ans > (int.MaxValue - (c - '0')) / 10  )
+                if (ans > (int.MaxValue - digit) / 10)
                 {
-
+                    //溢出了
+                    return sign == 1 ? int.MaxValue : int.MinValue;
                 }
 
-
-
-
-                //溢出检查
-                if (helper == -1)
-                {
-                    if (temp * -1 < int.MinValue)
-                    {
-                        return int.MinValue;
-                    }
-                }
-                else
-                {
-                    if (temp > int.MaxValue)
-                    {
-                        return int.MaxValue;
-                    }
-                }
-
-                ans = (int)temp;
+                //计算ans
+                ans = ans * 10 + digit;
+                index++;
             }
 
-            return ans * helper;
-
+            return ans * sign;
             
         }
     }

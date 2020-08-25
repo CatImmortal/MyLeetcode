@@ -52,6 +52,8 @@
     <Compile Include="哈希表\_0242有效的字母异位词.cs" />
     <Compile Include="哈希表\_0387字符串中的第一个唯一字符.cs" />
     <Compile Include="字符串\_0008字符串转换整数 %28atoi%29.cs" />
+    <Compile Include="字符串\_0028实现strStr.cs" />
+    <Compile Include="字符串\_0038外观数列.cs" />
     <Compile Include="数学\_0007整数反转.cs" />
     <Compile Include="字符串\_0014最长公共前缀.cs" />
     <Compile Include="字符串\_0067二进制求和.cs" />
