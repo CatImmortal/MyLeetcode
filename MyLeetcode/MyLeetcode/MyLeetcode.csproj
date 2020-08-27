@@ -176,6 +176,7 @@
     <Compile Include="树\_1457二叉树中的伪回文路径.cs" />
     <Compile Include="树\_1530好叶子节点对的数量.cs" />
     <Compile Include="树\_0450删除二叉搜索树中的节点.cs" />
+    <Compile Include="设计\_0384打乱数组.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
     <Compile Include="链表\_0021合并两个有序链表.cs" />
