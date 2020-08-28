@@ -57,11 +57,14 @@
     <Compile Include="字符串\_0008字符串转换整数 %28atoi%29.cs" />
     <Compile Include="字符串\_0028实现strStr.cs" />
     <Compile Include="字符串\_0038外观数列.cs" />
+    <Compile Include="字符串\_0657机器人能否返回原点.cs" />
     <Compile Include="数学\_0007整数反转.cs" />
     <Compile Include="字符串\_0014最长公共前缀.cs" />
     <Compile Include="字符串\_0067二进制求和.cs" />
     <Compile Include="字符串\_0125验证回文串.cs" />
     <Compile Include="字符串\_0541反转字符串2.cs" />
+    <Compile Include="数学\_0204计数质数.cs" />
+    <Compile Include="数学\_0412FizzBuzz.cs" />
     <Compile Include="数组\_0026删除排序数组中的重复项.cs" />
     <Compile Include="数组\_0035搜索插入位置.cs" />
     <Compile Include="哈希表\_0036有效的数独.cs" />
@@ -176,6 +179,7 @@
     <Compile Include="树\_1457二叉树中的伪回文路径.cs" />
     <Compile Include="树\_1530好叶子节点对的数量.cs" />
     <Compile Include="树\_0450删除二叉搜索树中的节点.cs" />
+    <Compile Include="设计\_0155最小栈.cs" />
     <Compile Include="设计\_0384打乱数组.cs" />
     <Compile Include="链表\_0002两数相加.cs" />
     <Compile Include="链表\_0019删除链表的倒数第N个节点.cs" />
