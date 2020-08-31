@@ -18,17 +18,28 @@ namespace MyLeetcode.数学
 
             bool[] b = new bool[n]; //合数标记
 
-            for (int i = 2; i < sqrtN; i++)
+            for (int i = 2; i <= sqrtN; i++)
             {
                 if (b[i] == false)
                 {
                     //是质数 将其倍数标记为合数
                     for (int j = i * i; j < n; j+=i)
                     {
-
+                        b[j] = true;    
                     }
                 }
             }
+
+            for (int i = 2; i < n; i++)
+            {
+                //统计质数
+                if (b[i] == false)
+                {
+                    result++;
+                }
+            }
+
+            return result;
             
         }
     }

@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using MyLeetcode.字符串;
+using MyLeetcode.数组;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -47,8 +47,8 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0038外观数列 p = new _0038外观数列();
-            p.CountAndSay(10);
+            _0118杨辉三角 p = new _0118杨辉三角();
+            p.Generate(5);
 
 
 

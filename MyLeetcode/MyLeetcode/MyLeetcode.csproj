@@ -48,6 +48,9 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="二分查找\_0278第一个错误的版本.cs" />
+    <Compile Include="位运算\_0190颠倒二进制位.cs" />
+    <Compile Include="位运算\_0191位1的个数.cs" />
+    <Compile Include="位运算\_0461汉明距离.cs" />
     <Compile Include="动态规划\_0070爬楼梯.cs" />
     <Compile Include="动态规划\_0053最大子序和.cs" />
     <Compile Include="动态规划\_0198打家劫舍.cs" />
@@ -71,6 +74,7 @@
     <Compile Include="数组\_0048旋转图像.cs" />
     <Compile Include="数组\_0066加一.cs" />
     <Compile Include="数组\_0088合并两个有序数组.cs" />
+    <Compile Include="数组\_0118杨辉三角.cs" />
     <Compile Include="数组\_0121买卖股票的最佳时机.cs" />
     <Compile Include="数组\_0122买卖股票的最佳时机2.cs" />
     <Compile Include="位运算\_0136只出现一次的数字.cs" />
