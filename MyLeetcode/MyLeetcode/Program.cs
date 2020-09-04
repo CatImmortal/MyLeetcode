@@ -1,9 +1,11 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using MyLeetcode.数组;
+using MyLeetcode.栈;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -47,8 +49,8 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0118杨辉三角 p = new _0118杨辉三角();
-            p.Generate(5);
+            _0020有效的括号 p = new _0020有效的括号();
+            p.IsValid("()");
 
 
 

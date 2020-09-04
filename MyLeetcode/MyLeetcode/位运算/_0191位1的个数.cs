@@ -35,7 +35,7 @@ namespace MyLeetcode.位运算
             while (n != 0)
             {
                 sum++;
-                n &= (n - 1);  //将n 按位与 n-1 总是将n最后一个1变为0
+                n &= (n - 1);  //将n 按位与 n-1 总是将n二进制最后一个1变为0
             }
             return sum;
         }
