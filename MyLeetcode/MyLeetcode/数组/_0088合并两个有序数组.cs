@@ -92,7 +92,8 @@ namespace MyLeetcode.数组
             //就表示该数组剩余的所有元素都比另一个数组的最小元素要小
             //直接安排到nums1头部
 
-            //将nums2剩余元素复制到nums1头部
+            //nums1的话不用处理
+            //nums2的话将nums2剩余元素复制到nums1头部
             //处理nums2还有剩余的情况
             Array.Copy(nums2, 0, nums1, 0, p2 + 1);
 
