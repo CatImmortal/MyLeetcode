@@ -49,6 +49,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="数学\_0268缺失数字.cs" />
     <Compile Include="数组\_0015三数之和.cs" />
+    <Compile Include="数组\_0073矩阵置零.cs" />
     <Compile Include="栈\_0020有效的括号.cs" />
     <Compile Include="二分查找\_0278第一个错误的版本.cs" />
     <Compile Include="位运算\_0190颠倒二进制位.cs" />
