@@ -47,6 +47,8 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="动态规划\_0005最长回文子串.cs" />
+    <Compile Include="哈希表\_0049字母异位词分组.cs" />
     <Compile Include="数学\_0268缺失数字.cs" />
     <Compile Include="数组\_0015三数之和.cs" />
     <Compile Include="数组\_0073矩阵置零.cs" />
