@@ -6,6 +6,7 @@ using System.Text;
 using System.Threading.Tasks;
 using MyLeetcode.数组;
 using MyLeetcode.栈;
+using MyLeetcode.哈希表;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -49,8 +50,10 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0020有效的括号 p = new _0020有效的括号();
-            p.IsValid("()");
+            _0409最长回文串 p = new _0409最长回文串();
+            string s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+
+            p.LongestPalindrome(s);
 
 
 
