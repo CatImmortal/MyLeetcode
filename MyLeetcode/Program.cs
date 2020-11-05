@@ -7,6 +7,8 @@ using System.Threading.Tasks;
 using MyLeetcode.数组;
 using MyLeetcode.栈;
 using MyLeetcode.哈希表;
+using MyLeetcode.动态规划;
+
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -50,12 +52,10 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0409最长回文串 p = new _0409最长回文串();
-            string s = "civilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth";
+            _0005最长回文子串 p = new _0005最长回文子串();
+            string res = p.LongestPalindrome("cbbd");
 
-            p.LongestPalindrome(s);
-
-
+            Console.WriteLine(res);
 
         }
 
