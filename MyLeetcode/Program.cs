@@ -8,6 +8,7 @@ using MyLeetcode.数组;
 using MyLeetcode.栈;
 using MyLeetcode.哈希表;
 using MyLeetcode.动态规划;
+using MyLeetcode.回溯算法;
 
 namespace MyLeetcode
 {
@@ -52,10 +53,12 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0005最长回文子串 p = new _0005最长回文子串();
-            string res = p.LongestPalindrome("cbbd");
-
-            Console.WriteLine(res);
+            _0022括号生成 p = new _0022括号生成();
+            List<string> ans = (List<string>)p.GenerateParenthesis(3);
+            for (int i = 0; i < ans.Count; i++)
+            {
+                Console.WriteLine(ans[i]);
+            }
 
         }
 

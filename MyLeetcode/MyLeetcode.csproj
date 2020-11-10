@@ -53,6 +53,9 @@
     <Compile Include="哈希表\_0409最长回文串.cs" />
     <Compile Include="回溯算法\_0017电话号码的字母组合.cs" />
     <Compile Include="回溯算法\_0022括号生成.cs" />
+    <Compile Include="回溯算法\_0046全排列.cs" />
+    <Compile Include="回溯算法\_0047全排列2.cs" />
+    <Compile Include="回溯算法\_0078子集.cs" />
     <Compile Include="字符串\_0334递增的三元子序列.cs" />
     <Compile Include="数学\_0268缺失数字.cs" />
     <Compile Include="数组\_0015三数之和.cs" />
