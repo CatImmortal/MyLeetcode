@@ -53,11 +53,16 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0022括号生成 p = new _0022括号生成();
-            List<string> ans = (List<string>)p.GenerateParenthesis(3);
+            _0090子集2 p = new _0090子集2();
+            int[] nums = { 1, 2, 2 };
+            IList<IList<int>> ans = p.SubsetsWithDup(nums);
             for (int i = 0; i < ans.Count; i++)
             {
-                Console.WriteLine(ans[i]);
+                for (int j = 0; j < ans[i].Count; j++)
+                {
+                    Console.Write(ans[i][j] + ",");
+                }
+                Console.WriteLine();
             }
 
         }

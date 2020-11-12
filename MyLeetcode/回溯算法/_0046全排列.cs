@@ -19,7 +19,7 @@ namespace MyLeetcode.回溯算法
                 return ans;
             }
 
-            //标记各个位置的数字是否已选择
+            //标记当前路径下 各个位置的数字是否已选择
             bool[] used = new bool[nums.Length];
 
             List<int> path = new List<int>();
