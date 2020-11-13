@@ -59,6 +59,7 @@
     <Compile Include="回溯算法\_0079单词搜索.cs" />
     <Compile Include="回溯算法\_0090子集2.cs" />
     <Compile Include="字符串\_0334递增的三元子序列.cs" />
+    <Compile Include="排序\_0075颜色分类.cs" />
     <Compile Include="数学\_0268缺失数字.cs" />
     <Compile Include="数组\_0015三数之和.cs" />
     <Compile Include="数组\_0073矩阵置零.cs" />

@@ -53,17 +53,14 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0090子集2 p = new _0090子集2();
-            int[] nums = { 1, 2, 2 };
-            IList<IList<int>> ans = p.SubsetsWithDup(nums);
-            for (int i = 0; i < ans.Count; i++)
-            {
-                for (int j = 0; j < ans[i].Count; j++)
-                {
-                    Console.Write(ans[i][j] + ",");
-                }
-                Console.WriteLine();
-            }
+            _0079单词搜索 p = new _0079单词搜索();
+
+            char[][] param = new char[2][];
+            param[0] = new char[] { 'a','b'};
+            param[1] = new char[] {'c','d'};
+        
+
+            p.Exist(param, "cdba");
 
         }
 
