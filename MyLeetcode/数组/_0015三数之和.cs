@@ -6,6 +6,8 @@ using System.Threading.Tasks;
 
 namespace MyLeetcode.数组
 {
+    //https://leetcode-cn.com/problems/3sum/
+
     class _0015三数之和
     {
         public IList<IList<int>> ThreeSum(int[] nums)

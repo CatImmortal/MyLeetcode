@@ -53,15 +53,20 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0079单词搜索 p = new _0079单词搜索();
+            //_0079单词搜索 p = new _0079单词搜索();
 
-            char[][] param = new char[2][];
-            param[0] = new char[] { 'a','b'};
-            param[1] = new char[] {'c','d'};
-        
+            //char[][] param = new char[2][];
+            //param[0] = new char[] { 'a','b'};
+            //param[1] = new char[] {'c','d'};
 
-            p.Exist(param, "cdba");
 
+            //p.Exist(param, "cdba");
+
+            List<Program> list = new List<Program>(100);
+            if (list[10] == null)
+            {
+                Console.WriteLine(666);
+            }
         }
 
 

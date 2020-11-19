@@ -50,6 +50,7 @@
     <Compile Include="动态规划\_0005最长回文子串.cs" />
     <Compile Include="哈希表\_0003无重复字符的最长子串.cs" />
     <Compile Include="哈希表\_0049字母异位词分组.cs" />
+    <Compile Include="哈希表\_0347前K个高频元素.cs" />
     <Compile Include="哈希表\_0409最长回文串.cs" />
     <Compile Include="回溯算法\_0017电话号码的字母组合.cs" />
     <Compile Include="回溯算法\_0022括号生成.cs" />
@@ -92,8 +93,8 @@
     <Compile Include="数组\_0066加一.cs" />
     <Compile Include="数组\_0088合并两个有序数组.cs" />
     <Compile Include="数组\_0118杨辉三角.cs" />
-    <Compile Include="数组\_0121买卖股票的最佳时机.cs" />
-    <Compile Include="数组\_0122买卖股票的最佳时机2.cs" />
+    <Compile Include="贪心算法\_0121买卖股票的最佳时机.cs" />
+    <Compile Include="贪心算法\_0122买卖股票的最佳时机2.cs" />
     <Compile Include="位运算\_0136只出现一次的数字.cs" />
     <Compile Include="数组\_0167两数之和2-输入有序数组.cs" />
     <Compile Include="数组\_0189旋转数组.cs" />
