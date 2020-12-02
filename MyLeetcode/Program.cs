@@ -9,7 +9,7 @@ using MyLeetcode.栈;
 using MyLeetcode.哈希表;
 using MyLeetcode.动态规划;
 using MyLeetcode.回溯算法;
-
+using MyLeetcode.二分查找;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -53,20 +53,12 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            //_0079单词搜索 p = new _0079单词搜索();
+            _0034在排序数组中查找元素的第一个和最后一个位置 p = new _0034在排序数组中查找元素的第一个和最后一个位置();
 
-            //char[][] param = new char[2][];
-            //param[0] = new char[] { 'a','b'};
-            //param[1] = new char[] {'c','d'};
+            int[] nums = { 5, 7, 7, 8, 8, 10 };
 
+            int[] ans = p.SearchRange(nums, 8);
 
-            //p.Exist(param, "cdba");
-
-            List<Program> list = new List<Program>(100);
-            if (list[10] == null)
-            {
-                Console.WriteLine(666);
-            }
         }
 
 
