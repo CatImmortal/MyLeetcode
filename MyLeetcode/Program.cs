@@ -53,11 +53,9 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0034在排序数组中查找元素的第一个和最后一个位置 p = new _0034在排序数组中查找元素的第一个和最后一个位置();
-
-            int[] nums = { 5, 7, 7, 8, 8, 10 };
-
-            int[] ans = p.SearchRange(nums, 8);
+            _0852山脉数组的峰顶索引 p = new _0852山脉数组的峰顶索引();
+            int[] nums = {3,5,3,2,0 };
+            p.PeakIndexInMountainArray2(nums);
 
         }
 

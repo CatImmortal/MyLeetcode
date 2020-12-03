@@ -97,7 +97,7 @@ namespace MyLeetcode.二分查找
                 }
                 else
                 {
-                    //不返回 锁定左侧边界
+                    //不返回 收缩右边界
                     right = mid - 1;
                 }
             }
@@ -132,7 +132,7 @@ namespace MyLeetcode.二分查找
                 }
                 else
                 {
-                    //不返回 锁定右侧边界
+                    //不返回 收缩左边界
                     left = mid + 1;
                 }
             }
