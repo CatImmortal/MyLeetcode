@@ -53,9 +53,9 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0852山脉数组的峰顶索引 p = new _0852山脉数组的峰顶索引();
-            int[] nums = {3,5,3,2,0 };
-            p.PeakIndexInMountainArray2(nums);
+            _0033搜索旋转排序数组 p = new _0033搜索旋转排序数组();
+            int[] nums = {4,5,6,7,0,1,2 };
+            p.Search(nums,0);
 
         }
 

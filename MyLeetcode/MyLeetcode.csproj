@@ -47,6 +47,7 @@
   <ItemGroup>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="二分查找\_0033搜索旋转排序数组.cs" />
     <Compile Include="二分查找\_0034在排序数组中查找元素的第一个和最后一个位置.cs" />
     <Compile Include="二分查找\_0162寻找峰值.cs" />
     <Compile Include="二分查找\_0852山脉数组的峰顶索引.cs" />
