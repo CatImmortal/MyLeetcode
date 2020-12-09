@@ -105,6 +105,8 @@ namespace MyLeetcode.二分查找
                     return mid;
                 }
 
+                //通过对比首位元素判断mid哪边是有序的
+
                 if (nums[0] <= nums[mid])
                 {
                     //mid左侧部分有序

@@ -10,6 +10,8 @@ using MyLeetcode.哈希表;
 using MyLeetcode.动态规划;
 using MyLeetcode.回溯算法;
 using MyLeetcode.二分查找;
+using MyLeetcode.排序;
+using MyLeetcode.贪心算法;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -53,12 +55,13 @@ namespace MyLeetcode
     {
         static void Main(string[] args)
         {
-            _0033搜索旋转排序数组 p = new _0033搜索旋转排序数组();
-            int[] nums = {4,5,6,7,0,1,2 };
-            p.Search(nums,0);
+
+            _0055跳跃游戏 p = new _0055跳跃游戏();
+
+            int[] nums = { 3, 2, 1, 0, 4 };
+            p.CanJump(nums);
 
         }
-
 
 
 
