@@ -34,6 +34,7 @@ namespace MyLeetcode.动态规划
 
 
                 //当前房屋最高可偷窃金额=max(0 .. i - 2最高金额 + 当前房屋金额,0 .. i-1最高金额)
+                //就是选择 i-2房屋最高可偷窃金额 + 当前房屋金额 还是选择i- 1房屋最高可偷窃金额
                 second = Math.Max(first + nums[i], second);
 
                 first = temp;

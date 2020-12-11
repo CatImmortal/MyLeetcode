@@ -54,6 +54,8 @@
     <Compile Include="二分查找\_0240搜索二维矩阵2.cs" />
     <Compile Include="二分查找\_0852山脉数组的峰顶索引.cs" />
     <Compile Include="动态规划\_0005最长回文子串.cs" />
+    <Compile Include="动态规划\_0062不同路径.cs" />
+    <Compile Include="动态规划\_0322零钱兑换.cs" />
     <Compile Include="哈希表\_0003无重复字符的最长子串.cs" />
     <Compile Include="哈希表\_0049字母异位词分组.cs" />
     <Compile Include="哈希表\_0347前K个高频元素.cs" />

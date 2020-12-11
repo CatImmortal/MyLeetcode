@@ -70,7 +70,7 @@ namespace MyLeetcode.动态规划
             int maxLen = 1; //当前最长回文子串的长度
             int begin = 0;
 
-            bool[,] dp = new bool[s.Length, s.Length];
+            bool[,] dp = new bool[s.Length, s.Length];  //dp[i,j]表示i到j位置的字符串是否为回文串
 
             for (int i = 0; i < s.Length; i++)
             {
