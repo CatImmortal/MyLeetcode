@@ -92,7 +92,7 @@ namespace MyLeetcode.动态规划
                     //i - coins[j]表示金额减去硬币j的面值后剩下的金额
                     if (i - coins[j] >= 0 && memo[i - coins[j]] < min)
                     {
-                        min = memo[i - coins[j]] + 1;  //加上1 因为要多算一个硬币j
+                        min = memo[i - coins[j]] + 1;  //加上1 因为要加上一个硬币j的面额来凑足i
                     }
                     
                 }
@@ -105,7 +105,6 @@ namespace MyLeetcode.动态规划
                 //无解
                 return -1;
             }
-
             return memo[amount];
         }
     }
