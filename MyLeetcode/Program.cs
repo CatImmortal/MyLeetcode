@@ -12,6 +12,7 @@ using MyLeetcode.回溯算法;
 using MyLeetcode.二分查找;
 using MyLeetcode.排序;
 using MyLeetcode.贪心算法;
+using MyLeetcode.数学;
 namespace MyLeetcode
 {
     //Definition for singly-linked list.
@@ -56,10 +57,7 @@ namespace MyLeetcode
         static void Main(string[] args)
         {
 
-            _0055跳跃游戏 p = new _0055跳跃游戏();
 
-            int[] nums = { 3, 2, 1, 0, 4 };
-            p.CanJump(nums);
 
         }
 
