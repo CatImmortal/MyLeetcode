@@ -87,19 +87,25 @@ namespace MyLeetcode.二分查找
 
                 if (nums[mid] > target)
                 {
-                    // 下一轮搜索区间是 [left, mid - 1]
+                    //比target大 收缩右边界
                     right = mid - 1;
                 }
                 else if (nums[mid] < target)
                 {
-                    // 下一轮搜索区间是 [mid + 1, right]
+                    //比target小 收缩左边界
                     left = mid + 1;
                 }
                 else
                 {
-                    //不返回 收缩右边界
+                    //和target相等 收缩右边界 
+                    //right最终会收缩到第一个target的-1位置
+                    //left最终也会停到right+1的位置上
                     right = mid - 1;
                 }
+
+                //总结 只要是>=target 就一直收缩右边界 直到把right停到最左边的target位置-1的位置上 
+                //接下来left就会停在right+1上 然后结束循环
+                
             }
 
             //小心越界
@@ -122,19 +128,24 @@ namespace MyLeetcode.二分查找
 
                 if (nums[mid] > target)
                 {
-                    // 下一轮搜索区间是 [left, mid - 1]
+                    // 比target大 收缩右边界
                     right = mid - 1;
                 }
                 else if (nums[mid] < target)
                 {
-                    // 下一轮搜索区间是 [mid + 1, right]
+                    // 比target小 收缩左边界
                     left = mid + 1;
                 }
                 else
                 {
-                    //不返回 收缩左边界
+                    //和target相等 收缩左边界 
+                    //left最终会收缩到第一个target的+1位置
+                    //right最终也会停到left-1的位置上
                     left = mid + 1;
                 }
+
+                //总结 只要是<=target 就一直收缩左边界 直到把left停到最右边的target位置+1的位置上
+                //接下来right就会停在left-1上 然后结束循环
             }
 
             //小心越界

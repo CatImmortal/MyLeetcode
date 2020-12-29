@@ -104,6 +104,7 @@
     <Compile Include="数组\_0066加一.cs" />
     <Compile Include="数组\_0088合并两个有序数组.cs" />
     <Compile Include="数组\_0118杨辉三角.cs" />
+    <Compile Include="设计\_0380常数时间插入删除和获取随机元素.cs" />
     <Compile Include="贪心算法\_0055跳跃游戏.cs" />
     <Compile Include="贪心算法\_0121买卖股票的最佳时机.cs" />
     <Compile Include="贪心算法\_0122买卖股票的最佳时机2.cs" />
